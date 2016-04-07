@@ -119,6 +119,7 @@
       <p class="paragraph">&nbsp;</p>
       <p class="paragraph"><strong>COMPONENTS ONE BY ONE: ANTENNA</strong></p>
       <p class="paragraph">The antenna is the essential component of every FPV system. When we say   &ldquo;essential&rdquo; we mean it. A wrong antenna can degrade the range of the   system to very low values, making flying impossible.</p>
+      <p class="paragraph"><img src="beandrone/2a012dc81c12c5f2922722feac7c5f9b.image_.266x292.jpg"></p>
       <p class="paragraph">Linear are now considered by most as old school technology for FPV with   the realization of circular polarization, but it still has its place for small micro aplications.</p>
       <p class="paragraph">Main attributes are:</p>
       <p class="paragraph">&nbsp;</p>
@@ -158,6 +159,8 @@
       
       >
    <p class="paragraph">&gt; &gt; &gt; material / size/ weight   </p>
+   <p class="paragraph">&gt; &gt; &gt; connector type SMA vs RP-SMA (male vs female)</p>
+   <p class="paragraph"><img src="beandrone/SMA.jpg"></p>
       <p class="paragraph"><strong>COMPONENTS ONE BY ONE: vTX,vRX)</strong></p>
       <p class="paragraph">The video transmitter is the device that transmits an analog (some   digital devices exists already) signal of the fpv video camera to the   ground, where a video receiver catches the signal and processes it.  The   signal is transmitted in SD quality, that means 576 horizontal lines.</p>
       <p class="paragraph"><img src="beandrone/12431.jpg" width="700" height="244"></p>
@@ -190,13 +193,30 @@
       <p class="paragraph">Generally, the lower the frequency, the better is the penetration   (possibility for the signal to get through). Of course again, by using   high gain directional antenna, more sensitive receiver or higher RF   output power will help making the penetration better.      </p>
       <p class="paragraph">General rule of thumb is ALWAYS to increase the antenna gain/vRX   sensitivity, and AVOID increasing the vTX RF power. The reason is   simple, the high RF power levels can simply affect other devices   onboard, even the RX and this can lower the range for the RC link which   we need to avoid.Also note that by increasing the vTX power it will get more and more hot, and as a result it can easily burn out.</p>
       <p class="paragraph">A typical situation is when we use 2.4G for RC link (very widely used)   and we need high penetration so we use 1.2/1.3G for video. In this case   the vTX can (will) negatively affect the range of the RC link, that can   get down even to 1/10 of its maximum range.</p>
-      <p class="paragraph">&nbsp;</p>
+      <p class="paragraph"><strong>MAYDAY!! my video has bad quality</strong></p>
+      <p class="paragraph">The video picture can generally be affected 2 ways, by EMI   (electromagnetic interference, or RFI – radio frequency interference),   coming from any onboard electronics device or by the unwanted voltage   spikes, usually coming from the motors.</p>
+      <p class="paragraph"><img src="beandrone/lcf2.jpg"></p>
+      <p class="paragraph">The latter can usually be cured (to a certain point) by using so-called   &ldquo;LC filters&rdquo;. The &ldquo;LC&rdquo; comes from the names of the passive components   used, capacitors and inductors. Making such a filter at home is   relatively easy and very cheap, however, the result is not always   satisfactory. A thumb of rule is to use as high capacitance and   inductive components as possible.<img src="beandrone/lcfilter.jpg"></p>
+      <p class="paragraph">A good solution is to find the component that &ldquo;makes the noise&rdquo; and   shield it as much as possible. The shielding can be done the easiest way   by using some copper or aluminium foils for wrapping. In addition to   this, we can use ferrite rings of different shapes and sizes, and twist   the wires going to the transmitter around them as many times as   possible.  In many cases, just simply twisting the wires, going between   the video components can be sufficient, to filter the noise.</p>
       <p class="paragraph"><strong>about FPV legality and safety</strong></p>
       <p class="paragraph">Always obey the law when flying, and fly safely!  Laws vary from   locality to locality. Most video transmitters used for FPV flying   require an amateur radio license to operate legally, depends mainly on wich frecuencies/power you use. FPV hobby frecuencies are 800-900mhz, 1.2ghz ,2,4ghz, 5,8 ghz</p>
+      <p class="paragraph">Common illegalities:</p>
+      <p class="paragraph">- illegal frequency usage, or transmitting on an allowed frecuency with not allowed power levels ( HAM license existence)</p>
+      <p class="paragraph">-accidentally powering the vTx on a frecuency that is already used by someone else, causing to blind him and crash.</p>
+      <p class="paragraph">-damage caused by unattendance or technical problems</p>
+      <p class="paragraph">-illegal usage of the airspace</p>
+      <p class="paragraph">-illegal usage of the flying area</p>
+      <p class="paragraph">The worst issue ever would be to fly close to airports or in forbidden airspace.</p>
+      <p class="paragraph">&nbsp;</p>
       <p class="paragraph">Most FPV video transmitters are broadband "analog" transmitters based on   1950's technology, with relatively limited range when compared to the   range of your RC radio. One way to increase the range of the video link   is to use a more powerful transmitter, but that uses more battery power. </p>
-      <p class="paragraph">Most commons power for FPV video transmitters are between 25mw (raceband) and 600mw.</p>
+      <p class="paragraph"><strong>Most commons power for FPV video transmitters are between 25mw (raceband) and 600mw.</strong></p>
       <p class="paragraph">Another way to improve range and video signal quality is to use two   receivers on the ground, and to automatically select the one that has   the stronger signal. This arrangement is called "diversity." Some ground   stations provide diversity when two receivers are connected to them.</p>
       <p class="paragraph">Youtube is filled with &ldquo;how to fly a quadcopter&rdquo; instructional videos,   so that will be your starting point to figure out the basics. Once you   get the basics you can do some amazing stuff like drone racing from   point of view!</p>
+      <p class="paragraph"><strong>OSD on-screen display</strong></p>
+      <p class="paragraph"><img src="beandrone/osd2.jpg"></p>
+      <p class="paragraph">Is a small electronic component that gets installed between the fpv   camera and the video transmitter. Its function is to display additional   information, by overlaying it into the camera&rsquo;s picture. These   information are some essentials for flying, such as height, speed,   heading, voltage, power consumed and many more.</p>
+      <p class="paragraph">The real power of the OSD shows up in a more sophisticated   builds/projects, that use waypoint navigation and other automated   advanced functions.</p>
+      <p class="paragraph">&nbsp;</p>
       <p class="paragraph">&nbsp;</p>
       <p class="numbersblue">03<img src="beandrone/BeanCopterLogo.png" alt="" width="13" height="15"></p>
       <p class="paragraph">&gt; &gt; &gt; &gt; &gt; &gt; &gt; &gt;<a class="bluefullsize" id="how does it fly"><strong> Part three - How a drone flies</strong></a></p>
@@ -221,6 +241,9 @@
 	  
      <p class="paragraph"><iframe width="853" height="480" src="https://www.youtube.com/embed/YNzqTGEl2xQ?rel=0" frameborder="0" allowfullscreen></iframe></p>
       
+      <p class="paragraph">&nbsp;</p>
+      <p class="paragraph">&nbsp;</p>
+      <p class="paragraph">&nbsp;</p>
       <p class="paragraph">MOVEMENTS OF FLYING VEHICLES</p>
       <p class="paragraph"><img src="beandrone/PitchRollYaw.png"></p>
       <p class="paragraph"> TRANSMITTER MODES / HOW TO DRIVE THE VEHICLE</p>
@@ -240,6 +263,7 @@
         <p class="paragraph">&nbsp;</p>
         <p class="paragraph"><img src="beandrone/Parts-of-Transmitter-1024x834.jpg"></p>
         <p class="paragraph"> All the transmissions between the remote and the receiver come in a &quot;coded&quot; frecuency the normal outputs for Radiocontrol frecuencies are CPPM / PPM sum signal, S-BUS or Spektrum Satellite. They are mainly propietary brand modulations, so if you get a Spektrum you can only use spektrum products or modulation compatible one. </p>
+        <p class="paragraph">Most people are using 2.4GHz technology, but we can still encounter some &ldquo;old&rdquo; 35MHz and 72MHz systems. </p>
         <p class="paragraph">We carefull wich one you buy the first time! Some are more expensives have more options than others. </p>
         <p class="paragraph">More commons modulations are :</p>
         <p class="paragraph">- <a href="https://pixhawk.org/peripherals/radio-control/futaba/start" title="peripherals:radio-control:futaba:start">Futaba/Robbe FASST/RASST</a></p>
@@ -248,6 +272,99 @@
         <p class="paragraph">- <a href="https://pixhawk.org/peripherals/radio-control/yuneec" title="peripherals:radio-control:yuneec">Yuneec Radio Controls</a></p>
         <p class="paragraph">- <a href="https://pixhawk.org/peripherals/radio-control/spektrum_dsm" title="peripherals:radio-control:spektrum_dsm">Spektrum and DSM Compatible Receivers</a></p>
         <p class="paragraph"><iframe width="853" height="480" src="https://www.youtube.com/embed/IRmlX6rrs2w?rel=0" frameborder="0" allowfullscreen></iframe></p>
+        <p class="paragraph">&nbsp;</p>
+        <p class="paragraph">MOTORS BASIC CONCEPTS</p>
+      <p class="paragraph">A multicopter is more efficient when it&rsquo;s lighter, so you need to pick a good battery that has good capacity but light weight.Although you can choose the motors for the weight you want to carry,   it&rsquo;s always a good idea to carry as little weight as possible. Lightness   is very important to all aircraft because any excess weight could   reduce your battery life and maneuverability</p>
+      <p class="paragraph">A rule of thumb is<strong> Required Thrust per motor = ( Weight x 2 ) / 4</strong><img src="beandrone/00977d2fd93568c9a641c7720e9cb5cd2f61b7f4.png"></p>
+      <p class="paragraph"><strong>Brushed vs Brushless</strong></p>
+      <p class="paragraph"><img src="beandrone/brushed-brushless.jpg"></p>
+      <p class="paragraph">Advantage of brushed motors</p>
+      <p class="paragraph">-Inexpensive </p>
+      <p class="paragraph">-Simple wiring</p>
+      <p class="paragraph">-No need specialized ESC</p>
+      <p class="paragraph">Advantages of brushless</p>
+      <p class="paragraph">-Very low maintenance</p>
+      <p class="paragraph">-Higher speeds achievable</p>
+      <p class="paragraph">-Higher efficiency</p>
+      <p class="paragraph"><img src="beandrone/maxresdefault.jpg"></p>
+      <p class="paragraph">Motors used these days are almost exclusively of the &ldquo;brushless&rdquo; variety. That equates to minimal friction.A cylindrical shell of magnets rotates on precision bearings around a core of tightly and neatly coiled wire. </p>
+      <p class="paragraph"><img src="beandrone/brushless_motor_1-300x212.jpg"></p>
+      <p class="paragraph">Battery and weight is not the only factor we need to consider when it   comes to Efficiency, there is also motor efficiency. When choosing   motors, apart from motor KV and thrust, we also need to look at Watt&rsquo;s   and efficiency.</p>
+      <p class="paragraph">MATCHING AN ESC TO YOU MOTOR (Electronic Speed Controller)</p>
+      <p class="paragraph">Now that we have confirmed that this motor is suitable for our   application, we look at the Amp draw for our chosen   motor/battery/propeller. In our case, this is maximum of 7.5A for a 5x3   prop, and 11.5A for a 6x3 prop.  Since in our build we chose the 5x3   propellers, so we will need to use an ESC that is rated over 7.5A, so an   12A ESC would be a good choice for this motor/propeller running on a 3S   battery.</p>
+        <p class="paragraph">PROPELLERS AND ROTATION</p>
+        <p class="paragraph"><img src="beandrone/images1.jpg"> </p>
+        <p class="paragraph">A quadcopter uses two clockwise(CW) and two counter-clockwise(CCW)   propellers. Propellers are classified by length and pitch. For example   9×4.7 propellers are 9 inch long and has a pitch of 4.7.</p>
+        <p class="paragraph">Generally, increased propeller pitch and length will draw more current.   Also the pitch can be defined as the travel distance of one single prop   rotation. In a nutshell, higher pitch means slower rotation, but will   increase your vehicle speed which also use more power</p>
+        <p class="paragraph">.<img src="beandrone/propeller-pitch-300x92.jpg"></p>
+        <p class="paragraph">There are a few different types of propellers, such as plastic, carbon fibre etc.</p>
+        <p class="paragraph">A higher pitch propeller moves greater amount of air, which could create   turbulence and cause the aircraft to wobble during hovering. If you   notice this with your quadcopter, try to choosing a lower pitched   propeller.</p>
+        <p class="paragraph">When it comes to the length, propeller efficiency is closely related to   the contact area of a prop with air, so a small increase in prop length   will increase the propeller efficiency. (pretty much like swimmers with   larger hands and feet can swim faster, but also more tiring for them)</p>
+        <p class="paragraph">The orientation of the propeller depends mainly on your frame configuration.Each propeller needs an &quot;opposite&quot; so the torque that it produces is eliminated by another one.</p>
+        <p class="paragraph"><img src="beandrone/MultiWiiConfigurationMotor.jpg"></p>
+      <p class="paragraph">&nbsp;</p>
+        <p class="paragraph">BATTERIES &quot;hello LiPo&quot;        </p>
+        <p class="paragraph"><img src="beandrone/LiPo_Numbers.jpg"></p>
+        <p class="paragraph">LiPo batteries (short for Lithium Polymer) are a type   of rechargeable battery that has taken the electric RC world by storm,   especially for planes, helicopters, and <a href="http://www.rchelicopterfun.com/quadrocopter.html">multi-rotor</a>. They are the main reason electric   flight is now a very viable option over fuel powered models. </p>
+        <p class="paragraph">&gt; &gt; &gt; LiPo batteries are light weight and can be made in almost any shape and size</p>
+        <p class="paragraph">&gt; &gt; &gt; Rc LiPo have large capacities, meaning they hold lots of energy in a small package</p>
+        <p class="paragraph"> &gt; &gt; &gt; Rc LiPo have high discharge rates to power the most demanding electric motors</p>
+        <p class="paragraph"><strong>VOLTAGE</strong></p>
+        <p class="paragraph">Unlike conventional NiCad or NiMH battery   cells that have a nominal voltage of 1.2 volts per cell, LiPo battery   cells have a nominal voltage of 3.7 volts   per cell. </p>
+        <p class="paragraph"><strong>3.7 volt battery = 1 cell x 3.7 volts  (1S)</strong></p>
+        <p class="paragraph"><strong>7.4 volt battery = 2 cells x 3.7 volts  (2S) </strong></p>
+        <p class="paragraph"><strong>11.1 volt battery = 3 cells x 3.7 volts (3S)</strong></p>
+        <p class="paragraph"><strong>14.8 volt battery = 4 cells x 3.7 volts (4S)</strong></p>
+        <p class="paragraph"><strong>18.5 volt battery =  5 cells x 3.7 volts (5S)</strong></p>
+        <p class="paragraph"><strong>22.2 volt battery = 6 cells x 3.7 volts (6S) </strong></p>
+        <p class="paragraph"><strong>29.6 volt battery = 8 cells x 3.7 volts (8S)</strong></p>
+        <p class="paragraph"><strong>37.0 volt battery = 10 cells x 3.7 volts (10S</strong>)</p>
+        <p class="paragraph"><strong>44.4 volt battery = 12 cells x 3.7 volts (12)</strong></p>
+        <p class="paragraph">Unlike conventional NiCad or NiMH battery   cells that have a nominal voltage of 1.2 volts per cell, LiPo battery   cells have a nominal voltage of 3.7 volts   per ceLL</p>
+      <p class="paragraph"><span class="paragraph"><strong>CAPACITY</strong></span></p>
+        
+          <p class="paragraph">Capacity indicates how much power the battery pack can hold and   is indicated in miliamp hours (mAh). This is just a fancy way of saying   how much load or drain (measured in milliamps) can be put on the   battery for 1 hour at which time the battery will be fully discharged. <img src="beandrone/lipo_Batt_foilpouch_300pics.jpg"></p>
+      <p class="paragraph">The main thing to get out of this is <strong>if you want more flight   time; increase the capacity of your battery pack</strong>. Unlike voltage,   capacity can be changed around to give you more or less flight time. </p>
+          <p class="paragraph"><strong>DISCHARGE RATE</strong>          </p>
+          <p class="paragraph">Discharge rate is simply how fast a battery can be discharged   safely. Remember that ion exchange thing further up the page? Well the   faster the ions can flow from anode to cathode in a battery will   indicate the discharge rate. In the RC LiPo battery world it is called   the <strong>&ldquo;C&rdquo; rating</strong>. </p>
+          <p class="paragraph">&nbsp;</p>
+          <p class="paragraph"><img src="beandrone/2872-lipo-exploded-view_m.jpg"></p>
+          <p class="paragraph">Most RC LiPo Battery packs will show the continuous C rating and   usually a maximum burst C rating as well. A burst rating indicates the   battery discharge rate for short bursts (<strong>a few seconds maximum</strong>) of extended power. An   example might be something like "Discharge rate = 25C Continuous/50C   Bursts". </p>
+          <p class="paragraph">&nbsp;</p>
+          <p class="numbersblue">04<img src="beandrone/BeanCopterLogo.png" alt="" width="13" height="15"></p>
+          <p class="paragraph">&gt; &gt; &gt; &gt; &gt; &gt; &gt; &gt;<a name="`" class="bluefullsize" id="making the frame"><strong> Part four - design the frame</strong></a><img src="beandrone/IMG_9644.JPG"></p>
+          <p class="paragraph"><img src="beandrone/IMG_9646.JPG"></p>
+          <p class="paragraph"><img src="beandrone/IMG_9647.JPG"></p>
+          <p class="paragraph"><img src="beandrone/IMG_9648.JPG"></p>
+          <p class="numbersblue">05<img src="beandrone/BeanCopterLogo.png" alt="" width="13" height="15"></p>
+      <p class="paragraph">&gt; &gt; &gt; &gt; &gt; &gt; &gt; &gt;<a class="bluefullsize" id="fpv assembly1"><strong> Part five - fpv-1 &quot;video transmitter&quot;</strong></a></p>
+      <p class="paragraph">&nbsp;</p>
+      <p class="paragraph"><img src="beandrone/wiring.jpg"><img src="beandrone/IMG_1180.JPG"><img src="beandrone/IMG_1175.JPG"><img src="beandrone/IMG_1252.JPG"><img src="beandrone/IMG_1170.JPG"><img src="beandrone/IMG_1183.JPG"><img src="beandrone/IMG_1184.JPG"><img src="beandrone/IMG_1259.JPG"><img src="beandrone/IMG_1186.JPG"><img src="beandrone/IMG_1261.JPG"></p>
+      <p class="paragraph"><img src="beandrone/IMG_1260.JPG">+</p>
+      <p class="paragraph"><img src="beandrone/IMG_9650.JPG"></p>
+      <p class="paragraph"><img src="beandrone/IMG_9651.JPG"></p>
+      <p class="paragraph"><img src="beandrone/IMG_9671.JPG"></p>
+      <p class="paragraph"><img src="beandrone/IMG_1195.jpg"></p>
+      <p class="paragraph">&nbsp;</p>
+          <p class="numbersblue">06<img src="beandrone/BeanCopterLogo.png" alt="" width="13" height="15"></p>
+      <p class="paragraph">&gt; &gt; &gt; &gt; &gt; &gt; &gt; &gt;<a class="bluefullsize" id="fpv assembly2"><strong> Part six - fpv-2 &quot;video receiver&quot;</strong></a></p>
+      <p class="paragraph"><img src="beandrone/2015040507021382-84775.jpg"><img src="beandrone/2015040507020840-84775.jpg"></p>
+          <p class="numbersblue">07<img src="beandrone/BeanCopterLogo.png" alt="" width="13" height="15"></p>
+      <p class="paragraph">&gt; &gt; &gt; &gt; &gt; &gt; &gt; &gt;<a class="bluefullsize" id="fpv assembly3"><strong> Part seven - fpv-3 &quot;googles/ground station&quot;</strong></a></p>
+      <p class="paragraph"><img src="beandrone/Inside-the-controller.png"><img src="beandrone/IMG_1568.JPG"><img src="beandrone/IMG_1561.JPG"><img src="beandrone/IMG_1562.JPG"><img src="beandrone/IMG_1563.JPG"><img src="beandrone/IMG_1569.JPG"><img src="beandrone/IMG_1570.JPG"></p>
+          <p class="numbersblue">08<img src="beandrone/BeanCopterLogo.png" alt="" width="13" height="15"></p>
+      <p class="paragraph">&gt; &gt; &gt; &gt; &gt; &gt; &gt; &gt;<a class="bluefullsize" id="drone1"><strong> Part eight - final assembly</strong></a></p>
+          <p class="numbersblue">09<img src="beandrone/BeanCopterLogo.png" alt="" width="13" height="15"></p>
+          <p class="paragraph">&gt; &gt; &gt; &gt; &gt; &gt; &gt; &gt;<a class="bluefullsize" id="fly"><strong> Part nice -let's fly!</strong></a></p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p class="paragraph">&nbsp;</p>
+          <p class="paragraph">&nbsp;</p>
+        </ul>
+      <p class="paragraph">&nbsp;</p>
+        <p class="paragraph">&nbsp;</p>
       <div class="license"><br />
 	  All the contents are created <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">by Eduardo Chamorro and are </span> licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</div>
 
