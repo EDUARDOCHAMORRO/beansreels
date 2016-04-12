@@ -339,24 +339,97 @@
           <p class="numbersblue">05<img src="beandrone/BeanCopterLogo.png" alt="" width="13" height="15"></p>
       <p class="paragraph">&gt; &gt; &gt; &gt; &gt; &gt; &gt; &gt;<a class="bluefullsize" id="fpv assembly1"><strong> Part five - fpv-1 &quot;video transmitter&quot;</strong></a></p>
       <p class="paragraph">&nbsp;</p>
-      <p class="paragraph"><img src="beandrone/wiring.jpg"><img src="beandrone/IMG_1180.JPG"><img src="beandrone/IMG_1175.JPG"><img src="beandrone/IMG_1252.JPG"><img src="beandrone/IMG_1170.JPG"><img src="beandrone/IMG_1183.JPG"><img src="beandrone/IMG_1184.JPG"><img src="beandrone/IMG_1259.JPG"><img src="beandrone/IMG_1186.JPG"><img src="beandrone/IMG_1261.JPG"></p>
-      <p class="paragraph"><img src="beandrone/IMG_1260.JPG">+</p>
-      <p class="paragraph"><img src="beandrone/IMG_9650.JPG"></p>
-      <p class="paragraph"><img src="beandrone/IMG_9651.JPG"></p>
-      <p class="paragraph"><img src="beandrone/IMG_9671.JPG"></p>
-      <p class="paragraph"><img src="beandrone/IMG_1195.jpg"></p>
+      <p class="paragraph">In this light weight micro FPV combo, we will be using the  video   transmitter TX5823, along with the nano FPV camera. This small 5.8Ghz   video transmitter only weights 2.3g, but with amazing 200mW power. This schematic below is the connection diagram.</p>
+      <p class="paragraph">To get the best signal and keep away all the electronic noise of the motors is very important to use a clean power input for that you can use a LC filter, to keep the voltage controlled and the power consumption as minimum as possible we are going to power all the video equipment from a polulu voltage regulator with LC filter embeded.</p>
       <p class="paragraph">&nbsp;</p>
+      <p class="paragraph"><img src="beandrone/wiring.jpg"></p>
+      <p class="paragraph">With a <a title="Circular or Linear Polarized Antenna For FPV" href="http://blog.oscarliang.net/linear-circular-polarized-antenna-fpv/" target="_blank">circular polarized antenna</a>, we can achieve more than 300 meters in range.If everything is correctly setup.</p>
+      <p class="paragraph"><img src="beandrone/IMG_1180.JPG"></p>
+      <p class="paragraph">Linear polarized antenna can be made very small and light weight,   especially useful for weight-critical application, such as on a micro   quadcopter.</p>
+      <p class="paragraph">The more precise wire length is, the better signal you should get   ideally. If you are using Coaxial Cable, it doesn&rsquo;t matter how long the   shell is, all that matter is the exposed wire (the part that is without   the shielding)</p>
+      <p class="paragraph">In the pictures we use just a simple wire but to make the receiver part of the antenna being away as possible from the motor electromagnetic field we are going to use a  RG316 Coaxial Cable.</p>
+      <p class="paragraph"><img src="beandrone/IMG_1252.JPG"></p>
+      <p class="paragraph">&nbsp;</p>
+      <p class="paragraph">If the antenna is a quarter wave <a href="http://en.wikipedia.org/wiki/Monopole_antenna" target="_blank">monopole antenna</a>, then its length should be a quarter of the signal wavelength.We use 5.8ghz video transmission signal      </p>
+      <p class="paragraph">If the wire is 12.92mm then it&rsquo;s tuned for 5.8Ghz, but only a little shorter e.g. 12.70mm, and it&rsquo;s now tuned to 5.9Ghz.</p>
+      <p class="paragraph">In the coaxial cable the &quot;transmision wire&quot; is protected from interference with another wire that works as shield.We have to solder this exterior shield to GND (ground)</p>
+      <p class="paragraph"><img src="beandrone/IMG_1170.JPG"></p>
+      <p class="paragraph">We will use a 600 TVL CMOS 170 degree wide angle camera.This micro camera operates or a voltage range or 3.7 to 5 V, so be carefull and measure the output power where you will connect it or you will &quot;burn&quot; the circuits. </p>
+      <p class="paragraph">It comes with an smal microphone that we are going to unsolder. The microphones in Fpv are almost useless as the only sound they capture is from the propellers.</p>
+      <p class="paragraph">The order of wires is </p>
+      <p class="paragraph">RED &gt; POSITIVE</p>
+      <p class="paragraph">YELLOW &gt; VIDEO SIGNAL</p>
+      <p class="paragraph">BLACK &gt; NEGATIVE</p>
+      <p class="paragraph">WHITE &gt; AUDIO SIGNAL</p>
+      <p class="paragraph"><img src="beandrone/IMG_1183.JPG"></p>
+      <p class="paragraph">It comes with an smal microphone that we are going to unsolder. The microphones in Fpv are almost useless as the only sound they capture is from the propellers.</p>
+      <p class="paragraph">We unsolder the microphone and the white wire that it is AUDIO signal.</p>
+      <p class="paragraph"><img src="beandrone/IMG_1184.JPG"></p>
+      <p class="paragraph">Cut all the wire more or less until you only have 27 mm less, this is for saving gram and not to have to much weight due to long wires we don't need but also to keep it easier to solder everything.</p>
+      <p class="paragraph"><img src="beandrone/IMG_1259.JPG"></p>
+      <p class="paragraph"><img src="beandrone/IMG_1186.JPG"></p>
+      <p class="paragraph">Remember to install the camera on the frame before soldering to the receiver. As the wire comes trought the front hole on the camera holder.</p>
+      <p class="paragraph"><img src="beandrone/IMG_4683.JPG"></p>
+      <p class="paragraph">We can solder directly the connections to the receiver</p>
+      <p class="paragraph"><img src="beandrone/IMG_1261.JPG"></p>
+      <p class="paragraph"><img src="beandrone/IMG_1260.JPG">+<img src="beandrone/IMG_4684.JPG"></p>
+      <p class="paragraph">This is the polulu adjustable STEP-UP/STEP-DOWN voltage regulator S7V8A and Lc filter it will help us to have a constant and clean power for our FPV equipment.</p>
+      <p class="paragraph">The S7V8A switching step-up/step-down regulator efficiently produces an   adjustable output between 2.5 V to 8 V from input voltages between 2.7 V   and 11.8 V. Its ability to convert both higher and lower input voltages   makes it useful for applications where the power supply voltage can   vary greatly, as with batteries that start above but discharge below the   regulated voltage. The compact (0.45″ × 0.65″) module has a typical   efficiency of over 90% and can deliver 500 mA to 1 A across most   combinations of input and output voltages.</p>
+      <p class="paragraph">As we can see there is 4 connections but we will only use 3 </p>
+      <p class="paragraph">VIN &gt; CONNECTED TO THE LIPO BATTERY</p>
+      <p class="paragraph">GND &gt; COMMONG GND</p>
+      <p class="paragraph">VOUT &gt; FOR POWERING THE TRANSMITTER AND CAMERA</p>
+      <p class="paragraph"><img src="beandrone/IMG_9650.JPG"></p>
+      <p class="paragraph">The output voltage can be measured using a multimeter. Turning the   potentiometer clockwise increases the output voltage. The output voltage   can be affected by a screwdriver touching the potentiometer, so the   output measurement should be done with nothing touching the   potentiometer.</p>
+      <p class="paragraph">The way to setup the ouput power is by turning the small screwwheel. If we turn clockwise we augment the voltage and if we turn underclockwise we turn it down.</p>
+      <p class="paragraph"><img src="beandrone/IMG_9651.JPG"></p>
+      <p class="paragraph">We proceed to solder three connection to the regultar with caution not to make any short between the solders,wires or elements on the board.</p>
+      <p class="paragraph"><img src="beandrone/IMG_9605.JPG"></p>
+      <p class="paragraph">We power the polulu WITHOUT connecting the video equipment! We can do it directly to a fully loaded lipo battery and we measuree the voltage with a multimeter.</p>
+      <p class="paragraph">BE CAREFULL TO DON'T MAKE ANY SHORT WITH THE MULTIMETER CLAMPS OR YOU WILL INSTANLY KILL THE POLULU.</p>
+      <p class="paragraph"><img src="beandrone/IMG_9671.JPG"></p>
+      <p class="paragraph">We can start assemblying the components in our frame.</p>
+      <p class="paragraph"><img src="beandrone/IMG_9607.JPG"></p>
+      <p class="paragraph"><img src="beandrone/IMG_4684.JPG"></p>
+      <p class="paragraph">We proceed to solder the wires that come from the polulu to the lipo connecto on the board.</p>
+      <p class="paragraph">DON'T MISTMATCH THE POLARITY OF THE CONNECTIONS!</p>
+      <p class="paragraph"><img src="beandrone/IMG_4685.JPG"></p>
           <p class="numbersblue">06<img src="beandrone/BeanCopterLogo.png" alt="" width="13" height="15"></p>
       <p class="paragraph">&gt; &gt; &gt; &gt; &gt; &gt; &gt; &gt;<a class="bluefullsize" id="fpv assembly2"><strong> Part six - fpv-2 &quot;video receiver&quot;</strong></a></p>
-      <p class="paragraph"><img src="beandrone/2015040507021382-84775.jpg"><img src="beandrone/2015040507020840-84775.jpg"></p>
+      <p class="paragraph"><img src="beandrone/IMG_9601.JPG"></p>
+      <p class="paragraph"><img src="beandrone/IMG_9602.JPG"></p>
+      <p class="paragraph"><img src="beandrone/2015040507021382-84775.jpg"></p>
+      <p class="paragraph"><img src="beandrone/2015040507020840-84775.jpg"></p>
+      <p class="paragraph"><img src="beandrone/IMG_9600.JPG"></p>
+      <p class="paragraph">&nbsp;</p>
           <p class="numbersblue">07<img src="beandrone/BeanCopterLogo.png" alt="" width="13" height="15"></p>
       <p class="paragraph">&gt; &gt; &gt; &gt; &gt; &gt; &gt; &gt;<a class="bluefullsize" id="fpv assembly3"><strong> Part seven - fpv-3 &quot;googles/ground station&quot;</strong></a></p>
-      <p class="paragraph"><img src="beandrone/Inside-the-controller.png"><img src="beandrone/IMG_1568.JPG"><img src="beandrone/IMG_1561.JPG"><img src="beandrone/IMG_1562.JPG"><img src="beandrone/IMG_1563.JPG"><img src="beandrone/IMG_1569.JPG"><img src="beandrone/IMG_1570.JPG"></p>
+      <p class="paragraph">The main range of the remote controller is a little bit short 50-100m for flying Fpv.That is because it's antenna is just a wire soldered directly to the main board. We are goint to disasemble the controller to replace the antenna for a better one with more gain ( sensitivity). We proceed to disasemble it with the screws on the back. Be carefull with the small white button that are just placed in the front.</p>
+      <p class="paragraph"><img src="beandrone/IMG_1568.JPG"></p>
+      <p class="paragraph">This is the wire antenna that we have to replace. As you see it is the most difficult part of the whole workshop as the space for soldering and the soldering pads are very small.</p>
+      <p class="paragraph">Proceed to heat the back on the wire with the soldering iron to take it away.</p>
+      <p class="paragraph"><img src="beandrone/IMG_9598.JPG"></p>
+      <p class="paragraph">With the coaxial antenna wire. Peel it off to leave the main antenna (central wire) discovered and tight all the antenna shield on the side ( ground connection)</p>
+      <p class="paragraph"><img src="beandrone/IMG_9597.JPG"></p>
+      <p class="paragraph">Solder the central part of the new antenna where the old antenna was. Try to leave the less amount of &quot;unshielded&quot; antenna.As it may decrease the range.</p>
+      <p class="paragraph">Proceed to solder another wire to the shield part of the coaxial wire. We are going to connect this new wire to a ground pad on the back of the transmitter board.</p>
+      <p class="paragraph"><img src="beandrone/IMG_1561.JPG"></p>
+      <p class="paragraph">We have several GND pads where to connect but these two are the easiest ones.</p>
+      <p class="paragraph"><img src="beandrone/IMG_9599.JPG"></p>
+      <p class="paragraph">It should look like this. WOOAH!</p>
+      <p class="paragraph"><img src="beandrone/IMG_1562.JPG"></p>
+      <p class="paragraph"><img src="beandrone/IMG_1563.JPG"></p>
+      <p class="paragraph">We reassemble the remote all together. Making a hole on the frame on the positiion where we want to have the new antenna connection.</p>
+      <p class="paragraph"><img src="beandrone/IMG_1569.JPG"><img src="beandrone/IMG_1570.JPG"></p>
           <p class="numbersblue">08<img src="beandrone/BeanCopterLogo.png" alt="" width="13" height="15"></p>
       <p class="paragraph">&gt; &gt; &gt; &gt; &gt; &gt; &gt; &gt;<a class="bluefullsize" id="drone1"><strong> Part eight - final assembly</strong></a></p>
+      <p class="paragraph">&nbsp;</p>
+      <p class="paragraph">Receiver channels</p>
+      <p class="paragraph"><img src="beandrone/Sin título-1.jpg"></p>
+      <p class="paragraph">Transmitter channels</p>
           <p class="numbersblue">09<img src="beandrone/BeanCopterLogo.png" alt="" width="13" height="15"></p>
           <p class="paragraph">&gt; &gt; &gt; &gt; &gt; &gt; &gt; &gt;<a class="bluefullsize" id="fly"><strong> Part nice -let's fly!</strong></a></p>
-          <p>&nbsp;</p>
+          <p><img src="beandrone/IMG_9604.JPG"></p>
           <p>&nbsp;</p>
           <p>&nbsp;</p>
           <p>&nbsp;</p>
