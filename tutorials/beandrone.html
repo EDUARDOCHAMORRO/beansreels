@@ -34,12 +34,13 @@
 		<p class="numbers">06</p>
 		<p class="paragraph"><a href="#fpv assembly2">fpv-2 "video receiver"</a></p>
 		<p class="numbers">07</p>
-		<p class="paragraph"><a href="#fpv assembly3">fpv-3 "googles/ground station"</a></p>
+		<p class="paragraph"><a href="#fpv assembly4">fpv-3 "ground station"</a></p>
 		<p class="numbers">08</p>
-	  <p class="paragraph"><a href="#drone1">final assembly</a></p>
+	  <p class="paragraph"><a href="#googles"></a>fpv-4 &quot;googles mount&quot;</p>
 	  <p class="numbers">09</p>
-		<p class="paragraph"><a href="#fly"><b>let's fly!</b></a></p>
-		<p class="paragraph">&nbsp;</p>
+	  <p class="numbers">10</p>
+		<p class="paragraph"><a href="#remote"></a>		<a href="#remote">remote hacking </a></p>
+	  <p class="paragraph"><a href="#fly"><b>let's fly!</b></a></p>
 		<p class="paragraph">&nbsp;</p>
 		<p class="numbersblue">01<img src="beandrone/BeanCopterLogo.png" width="13" height="15"></p>
 		<p class="paragraph">&gt; &gt; &gt; &gt; &gt; &gt; &gt; &gt;<a class="bluefullsize" id="what is a drone"><strong> Part one - What is a drone?</strong></a></p>
@@ -332,7 +333,8 @@
           <p class="paragraph">Most RC LiPo Battery packs will show the continuous C rating and   usually a maximum burst C rating as well. A burst rating indicates the   battery discharge rate for short bursts (<strong>a few seconds maximum</strong>) of extended power. An   example might be something like "Discharge rate = 25C Continuous/50C   Bursts". </p>
           <p class="paragraph">&nbsp;</p>
           <p class="numbersblue">04<img src="beandrone/BeanCopterLogo.png" alt="" width="13" height="15"></p>
-          <p class="paragraph">&gt; &gt; &gt; &gt; &gt; &gt; &gt; &gt;<a name="`" class="bluefullsize" id="making the frame"><strong> Part four - design the frame</strong></a><img src="beandrone/IMG_9644.JPG"></p>
+          <p class="paragraph">&gt; &gt; &gt; &gt; &gt; &gt; &gt; &gt;<a name="`" class="bluefullsize" id="making the frame"><strong> Part four - design the frame</strong></a></p>
+          <p class="paragraph"><img src="beandrone/IMG_9644.JPG"></p>
           <p class="paragraph"><img src="beandrone/IMG_9646.JPG"></p>
           <p class="paragraph"><img src="beandrone/IMG_9647.JPG"></p>
           <p class="paragraph"><img src="beandrone/IMG_9648.JPG"></p>
@@ -346,7 +348,9 @@
       <p class="paragraph">With a <a title="Circular or Linear Polarized Antenna For FPV" href="http://blog.oscarliang.net/linear-circular-polarized-antenna-fpv/" target="_blank">circular polarized antenna</a>, we can achieve more than 300 meters in range.If everything is correctly setup.</p>
       <p class="paragraph"><img src="beandrone/IMG_1180.JPG"></p>
       <p class="paragraph">Linear polarized antenna can be made very small and light weight,   especially useful for weight-critical application, such as on a micro   quadcopter.</p>
+      <p class="paragraph"><img src="beandrone/CoaxialCable.jpg" width="807" height="413"></p>
       <p class="paragraph">The more precise wire length is, the better signal you should get   ideally. If you are using Coaxial Cable, it doesn&rsquo;t matter how long the   shell is, all that matter is the exposed wire (the part that is without   the shielding)</p>
+      <p class="paragraph"><img src="beandrone/XzpF4U3.jpg" width="801" height="450"></p>
       <p class="paragraph">In the pictures we use just a simple wire but to make the receiver part of the antenna being away as possible from the motor electromagnetic field we are going to use a  RG316 Coaxial Cable.</p>
       <p class="paragraph"><img src="beandrone/IMG_1252.JPG"></p>
       <p class="paragraph">&nbsp;</p>
@@ -354,6 +358,8 @@
       <p class="paragraph">If the wire is 12.92mm then it&rsquo;s tuned for 5.8Ghz, but only a little shorter e.g. 12.70mm, and it&rsquo;s now tuned to 5.9Ghz.</p>
       <p class="paragraph">In the coaxial cable the &quot;transmision wire&quot; is protected from interference with another wire that works as shield.We have to solder this exterior shield to GND (ground)</p>
       <p class="paragraph"><img src="beandrone/IMG_1170.JPG"></p>
+      <p class="paragraph"><img src="beandrone/IMG_9906.JPG"></p>
+      <p class="paragraph"><img src="beandrone/IMG_9917.JPG"></p>
       <p class="paragraph">We will use a 600 TVL CMOS 170 degree wide angle camera.This micro camera operates or a voltage range or 3.7 to 5 V, so be carefull and measure the output power where you will connect it or you will &quot;burn&quot; the circuits. </p>
       <p class="paragraph">It comes with an smal microphone that we are going to unsolder. The microphones in Fpv are almost useless as the only sound they capture is from the propellers.</p>
       <p class="paragraph">The order of wires is </p>
@@ -383,9 +389,14 @@
       <p class="paragraph">The output voltage can be measured using a multimeter. Turning the   potentiometer clockwise increases the output voltage. The output voltage   can be affected by a screwdriver touching the potentiometer, so the   output measurement should be done with nothing touching the   potentiometer.</p>
       <p class="paragraph">The way to setup the ouput power is by turning the small screwwheel. If we turn clockwise we augment the voltage and if we turn underclockwise we turn it down.</p>
       <p class="paragraph"><img src="beandrone/IMG_9651.JPG"></p>
-      <p class="paragraph">We proceed to solder three connection to the regultar with caution not to make any short between the solders,wires or elements on the board.</p>
-      <p class="paragraph"><img src="beandrone/IMG_9605.JPG"></p>
+      <p class="paragraph">We proceed to solder FOUR connections to the regulator with caution not to make any short between the solders,wires or elements on the board.</p>
+      <p class="paragraph">We need to solder also one of the capacitor in the kit. Capacitors have polarity (white line &gt; &gt; &gt; GND)</p>
+      <p class="paragraph">One wire to &gt; &gt; &gt; VIN</p>
+      <p class="paragraph">Two wires to &gt; &gt; &gt; ground</p>
+      <p class="paragraph">One wire to &gt; &gt; &gt; VOUT</p>
+      <p class="paragraph"><img src="beandrone/IMG_9908.JPG"></p>
       <p class="paragraph">We power the polulu WITHOUT connecting the video equipment! We can do it directly to a fully loaded lipo battery and we measuree the voltage with a multimeter.</p>
+      <p class="paragraph"><img src="beandrone/IMG_9907.JPG"></p>
       <p class="paragraph">BE CAREFULL TO DON'T MAKE ANY SHORT WITH THE MULTIMETER CLAMPS OR YOU WILL INSTANLY KILL THE POLULU.</p>
       <p class="paragraph"><img src="beandrone/multi.jpg"></p>
       <p class="paragraph"><img src="beandrone/IMG_9671.JPG"></p>
@@ -395,12 +406,30 @@
       <p class="paragraph">We proceed to solder the wires that come from the polulu to the lipo connecto on the board.</p>
       <p class="paragraph">DON'T MISTMATCH THE POLARITY OF THE CONNECTIONS!</p>
       <p class="paragraph"><img src="beandrone/IMG_4685.JPG"></p>
+      <p class="paragraph">We have two types of motors ones with a blue and a red wire and others with a black and white wire.</p>
+      <p class="paragraph">BLACK AND WHITE &gt; &gt; &gt; COUNTER CLOCKWISE ROTATION</p>
+      <p class="paragraph">RED AND BLUE &gt; &gt; &gt; CLOCKWISE ROTATION</p>
+      <p class="paragraph"><img src="beandrone/IMG_9920.JPG"></p>
           <p class="numbersblue">06<img src="beandrone/BeanCopterLogo.png" alt="" width="13" height="15"></p>
       <p class="paragraph">&gt; &gt; &gt; &gt; &gt; &gt; &gt; &gt;<a class="bluefullsize" id="fpv assembly2"><strong> Part six - fpv-2 &quot;video receiver&quot;</strong></a></p>
+      <p class="paragraph">&nbsp;</p>
+      <p class="paragraph">We proceed to assemble the video receiver the process is very similar to the transmitter one.</p>
+      <p class="paragraph">We will use:</p>
+      <p class="paragraph">&gt; &gt; &gt; RX5808 5.8ghz receiver</p>
+      <p class="paragraph">&gt; &gt; &gt; 3 WAY DIP SWITCH</p>
+      <p class="paragraph">&gt; &gt; &gt; Coaxial wire antenna</p>
+      <p class="paragraph">&gt; &gt; &gt; 6.3v 1000uf CAPACITOR</p>
       <p class="paragraph"><img src="beandrone/IMG_9601.JPG"></p>
+      <p class="paragraph">Same as we did with the transmitter we make a mini  fork with the coaxial wire. Leaving the minimum central wire exposed as possible.</p>
       <p class="paragraph"><img src="beandrone/IMG_9602.JPG"></p>
-      <p class="paragraph"><img src="beandrone/2015040507021382-84775.jpg"></p>
-      <p class="paragraph"><img src="beandrone/2015040507020840-84775.jpg"></p>
+      <p class="paragraph">Bend the capacitor wires on an 90&quot;degrees angle to keep it touching the metal shield of the receiver.It should look like this.</p>
+      <p class="paragraph"><img src="beandrone/IMG_9903.JPG"></p>
+      <p class="paragraph"><img src="beandrone/IMG_9918.JPG"></p>
+      <p class="paragraph"><img src="beandrone/IMG_9919.JPG"></p>
+      <p class="paragraph">&nbsp;</p>
+      <p class="numbersblue">07<img src="beandrone/BeanCopterLogo.png" alt="" width="13" height="15"></p>
+      <p class="paragraph">&gt; &gt; &gt; &gt; &gt; &gt; &gt; &gt;<a class="bluefullsize" id="fpv assembly4"><strong> Part seven - FPV-3 &quot;Ground Station&quot;</strong></a></p>
+      <p class="paragraph">&nbsp;</p>
       <p class="paragraph"><img src="beandrone/IMG_9778.JPG"></p>
       <p class="paragraph"><img src="beandrone/IMG_9779.JPG"></p>
       <p class="paragraph"><img src="beandrone/IMG_9781.JPG"></p>
@@ -411,77 +440,196 @@
       <p class="paragraph"><img src="beandrone/IMG_9786.JPG"></p>
       <p class="paragraph"><img src="beandrone/IMG_9787.JPG"></p>
       <p class="paragraph"><img src="beandrone/IMG_9788.JPG"></p>
+      <p class="paragraph"><img src="beandrone/multi.jpg" alt=""></p>
       <p class="paragraph"><img src="beandrone/IMG_9790.JPG"></p>
       <p class="paragraph"><img src="beandrone/IMG_9791.JPG"></p>
+      <p class="paragraph"><img src="beandrone/IMG_9918-2.jpg"></p>
       <p class="paragraph"><img src="beandrone/IMG_9794.JPG"></p>
+      
+      
+      <p class="paragraph">IF YOU WANT TO USE FPV CARBOARD HEADSET YOU CAN SKIP THIS PART UNTIL NEXT CHAPTER. </p>
+      
+      <p class="paragraph"><a href="#googles">CLICK HERE TO JUMP</a></p>
+      
+      
       <p class="paragraph"><img src="beandrone/IMG_9806.JPG"></p>
       <p class="paragraph"><img src="beandrone/IMG_9808.JPG"></p>
-          <p class="numbersblue">07<img src="beandrone/BeanCopterLogo.png" alt="" width="13" height="15"></p>
-      <p class="paragraph">&gt; &gt; &gt; &gt; &gt; &gt; &gt; &gt;<a class="bluefullsize" id="fpv assembly3"><strong> Part seven - fpv-3 &quot;googles/ground station&quot;</strong></a></p>
-      <p class="paragraph">The main range of the remote controller is a little bit short 50-100m for flying Fpv.That is because it's antenna is just a wire soldered directly to the main board. We are goint to disasemble the controller to replace the antenna for a better one with more gain ( sensitivity). We proceed to disasemble it with the screws on the back. Be carefull with the small white button that are just placed in the front.</p>
-      <p class="paragraph"><img src="beandrone/IMG_1568.JPG"></p>
-      <p class="paragraph">This is the wire antenna that we have to replace. As you see it is the most difficult part of the whole workshop as the space for soldering and the soldering pads are very small.</p>
-      <p class="paragraph">Proceed to heat the back on the wire with the soldering iron to take it away.</p>
-      <p class="paragraph"><img src="beandrone/IMG_9598.JPG"></p>
-      <p class="paragraph">With the coaxial antenna wire. Peel it off to leave the main antenna (central wire) discovered and tight all the antenna shield on the side ( ground connection)</p>
-      <p class="paragraph"><img src="beandrone/IMG_9597.JPG"></p>
-      <p class="paragraph">Solder the central part of the new antenna where the old antenna was. Try to leave the less amount of &quot;unshielded&quot; antenna.As it may decrease the range.</p>
-      <p class="paragraph">Proceed to solder another wire to the shield part of the coaxial wire. We are going to connect this new wire to a ground pad on the back of the transmitter board.</p>
-      <p class="paragraph"><img src="beandrone/IMG_1561.JPG"></p>
-      <p class="paragraph">We have several GND pads where to connect but these two are the easiest ones.</p>
-      <p class="paragraph"><img src="beandrone/IMG_9599.JPG"></p>
-      <p class="paragraph">It should look like this. WOOAH!</p>
-      <p class="paragraph"><img src="beandrone/IMG_1562.JPG"></p>
-      <p class="paragraph"><img src="beandrone/IMG_1563.JPG"></p>
-      <p class="paragraph"><img src="beandrone/IMG_9796.JPG"></p>
-      <p class="paragraph"><img src="beandrone/IMG_9797.JPG"></p>
-      <p class="paragraph">We reassemble the remote all together. Making a hole on the frame on the positiion where we want to have the new antenna connection.</p>
-      <p class="paragraph"><img src="beandrone/IMG_1569.JPG"></p>
-      <p class="paragraph"><img src="beandrone/IMG_1570.JPG"></p>
-      <p class="paragraph"><img src="beandrone/IMG_9800.JPG"></p>
-      <p class="paragraph"><img src="beandrone/IMG_9805.JPG"></p>
+      <p class="paragraph"><img src="beandrone/IMG_9909.JPG"></p>
+      <p class="paragraph"><img src="beandrone/IMG_9910.JPG"></p>
+      <p class="paragraph"><img src="beandrone/IMG_9911.JPG"></p>
+      <p class="paragraph"><img src="beandrone/IMG_9913.JPG"></p>
+      <p class="paragraph"><img src="beandrone/IMG_9915.JPG"></p>
+      <p class="paragraph"><img src="beandrone/IMG_9916.JPG"></p>
       <p class="paragraph">&nbsp;</p>
-          <p class="numbersblue">08<img src="beandrone/BeanCopterLogo.png" alt="" width="13" height="15"></p>
-      <p class="paragraph">&gt; &gt; &gt; &gt; &gt; &gt; &gt; &gt;<a class="bluefullsize" id="drone1"><strong> Part eight - final assembly</strong></a></p>
+      <p class="paragraph">&nbsp;</p>
+      <p class="numbersblue">08<img src="beandrone/BeanCopterLogo.png" alt="" width="13" height="15"></p>
+      <p class="paragraph">&gt; &gt; &gt; &gt; &gt; &gt; &gt; &gt;<a class="bluefullsize" id="googles"><strong> Part eight - FPV-4 &quot;Googles mount&quot;</strong></a></p>
+      <p class="paragraph">&nbsp;</p>
+      <p class="paragraph">The procedure of the assembling the cardboard googles fpv headset it is quite simple so follow the images for the bending procedure.</p>
+      <p class="paragraph">We have to cut the fresnel lens to the size of our lens holder. MARK WITH A PERMANENT MARKER AROUND THE CARBOARD.</p>
+      <p class="paragraph">NOT INSIDE!!!!</p>
       <p class="paragraph"><img src="beandrone/IMG_9687.jpg"></p>
       <p class="paragraph"><img src="beandrone/IMG_9688.jpg"></p>
+      <p class="paragraph">Cut the fresnel lens following the lines with some scissors.Be carefull to don't cut yourself. </p>
       <p class="paragraph"><img src="beandrone/IMG_9689.jpg"></p>
+      <p class="paragraph">Do some retouch to fit it properly to the size of the carboard. It should be a little bit smaller than it.</p>
       <p class="paragraph"><img src="beandrone/IMG_9690.jpg"></p>
       <p class="paragraph"><img src="beandrone/IMG_9691.jpg"></p>
+      <p class="paragraph">Place a little bit of hot glue in one of each corner to keep it in place.</p>
       <p class="paragraph"><img src="beandrone/IMG_9693.jpg"></p>
+      <p class="paragraph">Now do it again to close the &quot;sandwich&quot; </p>
+      <p class="paragraph">carboard &gt; &gt; &gt; fresnel lens &gt; &gt; &gt; cardboard</p>
       <p class="paragraph"><img src="beandrone/IMG_9695.jpg"></p>
+      <p class="paragraph">Place the lens in the holes of the down part marked with &quot; inside in of the sides&quot; and bend to the inside.</p>
       <p class="paragraph"><img src="beandrone/IMG_9697.jpg"></p>
+      <p class="paragraph">Just like this.</p>
       <p class="paragraph"><img src="beandrone/IMG_9705.jpg"></p>
       <p class="paragraph"><img src="beandrone/IMG_9711.jpg"></p>
       <p class="paragraph"><img src="beandrone/IMG_9712.jpg"></p>
+      <p class="paragraph">Attach the top and the bottom with double side tape of hot glue.</p>
       <p class="paragraph"><img src="beandrone/IMG_9713.jpg"></p>
+      <p class="paragraph">Fit the screen inside one you have FINISH PLACING THE POLULU INSIDE THE SCREEN!</p>
+      <p class="paragraph">Fix the screen with a little bit of hot glue of double side tape to keep it in place. You should try the focusing distance of the screen for you. For each person it changes a little bit front or back.</p>
       <p class="paragraph"><img src="beandrone/IMG_9715.jpg"></p>
+      <p class="paragraph">Close the lateral tabs and the big frontal tab. I recommend using velcro/double side tape so you can dissasemble in the future in case you want to take off the screen.</p>
       <p class="paragraph"><img src="beandrone/IMG_9716.jpg"></p>
+      <p class="paragraph">&nbsp;</p>
+      <p class="paragraph">Cut two velcro straps. One of 30 cm long and another of 1meter. Cut one of the smooth type and one of the rough one. NOT BOTH OF THE SAME!</p>
       <p class="paragraph"><img src="beandrone/IMG_9720.jpg"></p>
+      <p class="paragraph">introduce the short part on one side until half and put away the protector film. Gluing both sides together.Do it gently it is very gluing you will have problems to separate the parts if you don't do it well on the first shot.</p>
       <p class="paragraph"><img src="beandrone/IMG_9721.jpg"></p>
+      <p class="paragraph">I recommend to start from the end and smoothly put a little bit and glue it on each time, not everything at once.</p>
       <p class="paragraph"><img src="beandrone/IMG_9722.jpg"></p>
+      <p class="paragraph">Once finish proceed to do the same with the longest part on the other side.</p>
       <p class="paragraph"><img src="beandrone/IMG_9726.jpg"></p>
       <p class="paragraph"><img src="beandrone/IMG_9730.jpg"></p>
+      <p class="paragraph">Now we are going to cut two more strippes.Cut the &quot;smooth velcro&quot; ones, more or less 20 cm.These parts are for make the fit to our head more comfortable.</p>
       <p class="paragraph"><img src="beandrone/IMG_9732.jpg"></p>
+      <p class="paragraph">To make it easier to adapt to the round shape of the headset do some cuts on both sides.</p>
+      <p class="paragraph"><img src="beandrone/IMG_9734.jpg" alt=""></p>
+      <p class="paragraph">And glue it to the front and nose sides.</p>
       <p class="paragraph"><img src="beandrone/IMG_9733.jpg"></p>
-      <p class="paragraph"><img src="beandrone/IMG_9734.jpg"></p>
       <p class="paragraph"><img src="beandrone/IMG_9735.jpg"></p>
+      <p class="paragraph">The receiver holder will be screwed with the same screw that comes with the support off the screw, so don't loose it!</p>
       <p class="paragraph"><img src="beandrone/IMG_9749.jpg"></p>
       <p class="paragraph"><img src="beandrone/IMG_9750.jpg"></p>
       <p class="paragraph"><img src="beandrone/IMG_9761.jpg"></p>
+      <p class="paragraph">Once place the receiver case proceed to solder the connections to the receiver.</p>
+      <p class="paragraph"><img src="beandrone/IMG_9918-2.jpg"></p>
+      <p class="paragraph">Connect the three wires comming out of the screen to the transmitter. Don't worry if the wires are long.There is enough space in the case to hold everything.</p>
       <p class="paragraph"><img src="beandrone/IMG_9763.jpg"></p>
+      <p class="paragraph">Put a little bit of hot glue on the back of the receiver to keep it in place. The antenna can be a little bit longer and come out of the case. You can bend it until if fits inside of make a tiny hole to keep it out.</p>
+      <p class="paragraph">We screw the front part of the case to protect everything from dust/water ,etc</p>
       <p class="paragraph"><img src="beandrone/IMG_9766.jpg"></p>
+      <p class="paragraph">Now it is turn to assemble the battery backpack holder. Put the batteries inside the case before assemblying! It uses 8 AA batteries.</p>
       <p class="paragraph"><img src="beandrone/IMG_9767.jpg"></p>
+      <p class="paragraph">The 3d printed part it is just a clip between the velcro strap and the case. If it moves to much a little bit of hot glue will help.</p>
       <p class="paragraph"><img src="beandrone/IMG_9768.jpg"></p>
+      <p class="paragraph">Once finish,clip the holder on the velcro strap. The position doesn't matter ,place it where you feel confortable. </p>
       <p class="paragraph"><img src="beandrone/IMG_9769.jpg"></p>
+      <p class="paragraph">Connect the plug between the battery backpack and the the screen connector and voila.For power on everything there is a switch on the battery backpack. </p>
+      <p class="paragraph">You should notice you have a red/white/yellow connections leftovers. There are spare AV TV OUT/IN connections for connecting everything to another friend so he can also see everything or to a TV.</p>
       <p class="paragraph">&nbsp;</p>
-      <p class="paragraph">Receiver channels</p>
-      <p class="paragraph"><img src="beandrone/Sin título-1.jpg"></p>
-      <p class="paragraph">Transmitter channels</p>
-          <p class="numbersblue">09<img src="beandrone/BeanCopterLogo.png" alt="" width="13" height="15"></p>
-          <p class="paragraph">&gt; &gt; &gt; &gt; &gt; &gt; &gt; &gt;<a class="bluefullsize" id="fly"><strong> Part nice -let's fly!</strong></a></p>
-          <p><img src="beandrone/IMG_9604.JPG"></p>
+      <p class="numbersblue">09<img src="beandrone/BeanCopterLogo.png" alt="" width="13" height="15"></p>
+      <p class="paragraph">&gt; &gt; &gt; &gt; &gt; &gt; &gt; &gt;<a class="bluefullsize" id="remote"><strong> Part nine- &quot;Remote hacking&quot;</strong></a></p>
+      <p class="paragraph">The main range of the remote controller is a little bit short 50-100m for flying Fpv.That is because it's antenna is just a wire soldered directly to the main board. We are goint to disasemble the controller to replace the antenna for a better one with more gain ( sensitivity). We proceed to disasemble it with the screws on the back. Be carefull with the small white button that are just placed in the front.</p>
+      <p class="paragraph">THIS PART IS NOT STRICTLY NECESSARY, DO IT ONLY IF YOU FEEL CONFIDENT WITH THE SOLDERING IRON. THE SOLDERINGS ARE EXTREMELY DIFFICULT.</p>
+      <p class="paragraph"><img src="beandrone/IMG_1568.JPG" alt=""></p>
+      <p class="paragraph">This is the wire antenna that we have to replace. As you see it is the most difficult part of the whole workshop as the space for soldering and the soldering pads are very small.</p>
+      <p class="paragraph">Proceed to heat the back on the wire with the soldering iron to take it away.</p>
+      <p class="paragraph"><img src="beandrone/IMG_9598.JPG" alt=""></p>
+      <p class="paragraph">With the coaxial antenna wire. Peel it off to leave the main antenna (central wire) discovered and tight all the antenna shield on the side ( ground connection)</p>
+      <p class="paragraph"><img src="beandrone/IMG_9597.JPG" alt=""></p>
+      <p class="paragraph">Solder the central part of the new antenna where the old antenna was. Try to leave the less amount of &quot;unshielded&quot; antenna.As it may decrease the range.</p>
+      <p class="paragraph">Proceed to solder another wire to the shield part of the coaxial wire. We are going to connect this new wire to a ground pad on the back of the transmitter board.</p>
+      <p class="paragraph"><img src="beandrone/IMG_1561.JPG" alt=""></p>
+      <p class="paragraph">We have several GND pads where to connect but these two are the easiest ones.</p>
+      <p class="paragraph"><img src="beandrone/IMG_9599.JPG" alt=""></p>
+      <p class="paragraph">It should look like this. WOOAH!</p>
+      <p class="paragraph"><img src="beandrone/IMG_1562.JPG" alt=""></p>
+      <p class="paragraph">Another view</p>
+      <p class="paragraph"><img src="beandrone/IMG_1563.JPG" alt=""></p>
+      <p class="paragraph">We can make the hole for the antenna connector wherever we want but i really recommend this position. Make a little hole with a &quot;dremel&quot; or just melt the plastic with the solder iron.</p>
+      <p class="paragraph">Before making any hole check that it will not interfere with the josticks movement or while reassembling the remote.</p>
+      <p class="paragraph"><img src="beandrone/IMG_9796.JPG" alt=""></p>
+      <p class="paragraph"><img src="beandrone/IMG_9797.JPG" alt=""></p>
+      <p class="paragraph">We reassemble the remote all together. Making a hole on the frame on the positiion where we want to have the new antenna connection.</p>
+      <p class="paragraph"><img src="beandrone/IMG_1569.JPG" alt=""></p>
+      <p class="paragraph"><img src="beandrone/IMG_1570.JPG" alt=""></p>
+      <p class="paragraph">Tigtht the antenna connection with the bolt and washer.</p>
+      <p class="paragraph"><img src="beandrone/IMG_9800.JPG" alt=""></p>
+      <p class="paragraph">Attach the antenna gently by turning clockwise and ready to control. Don't forget to put the batteries on the remote. It uses 3 AAA batteries.</p>
+      <p class="paragraph"><img src="beandrone/IMG_9805.JPG" alt=""></p>
+      <p class="paragraph">&nbsp;</p>
+      <p class="paragraph">&nbsp;</p>
+      <p class="numbersblue">10<img src="beandrone/BeanCopterLogo.png" alt="" width="13" height="15"></p>
+          <p class="paragraph">&gt; &gt; &gt; &gt; &gt; &gt; &gt; &gt;<a class="bluefullsize" id="fly"><strong> Let's fly! TIPS AND TRICKS</strong></a></p>
+          <p class="paragraph"><strong>NOW IT IS TIME TO FLY!</strong></p>
+          <p class="paragraph"><strong>Before flying check that all the propellers turn in the correct position and are correctly located. There is two types clockwise and counterclockwise.</strong></p>
+          <p class="paragraph"><img src="beandrone/IMG_9686.jpg"></p>
+          <p class="paragraph"><strong>Connect first you lipo battery to the BeanDrone.</strong></p>
+          <p class="paragraph"><strong>Switch on your remote controller and push up and down your left throttle stick to bind to your drone.</strong></p>
+          <p class="paragraph"><strong> Switch on the battery backpack to power on your tv screen and receiver. </strong></p>
+          <p class="paragraph"><strong>If you don't see any image on your headset/screen check that you are using the same transmission/receiver channel on the transmitter/receiver.</strong></p>
+          <p class="paragraph"><strong>You can select different channels by sliding up and down the switches.</strong></p>
+          <p class="paragraph"><strong>Receiver channels</strong></p>
+      <p class="paragraph"><img src="beandrone/Sin título-1.jpg" alt=""></p>
+          <p class="paragraph"><strong>Transmitter channels</strong></p>
+          <p class="paragraph"><img src="beandrone/123.jpg" width="779" height="232"></p>
+      <p class="paragraph">For example if i want to use CH1 all the switches on both transmitter and receiver are &quot;down&quot;</p>
+      <p class="paragraph"><img src="beandrone/IMG_9916.JPG"></p>
+      <p class="paragraph">&nbsp;</p>
+          <p class="paragraph"><strong>TIPS AND TRICKS</strong></p>
+          <p class="paragraph">&nbsp;</p>
+          <p class="paragraph">&gt; &gt; &gt; Depth Perception trough your new eyes</p>
+          <p class="paragraph"> One of the hardest things to get used to when flying FPV is the height   and depth of the surrounding elements now that you are starting through a   security camera.</p>
+          <p class="paragraph">Fly  around something you know well how it look alike and which size you know until you get &ldquo;used to&rdquo; what it looks and feels like and how it is to be  3 meters above the ground.</p>
+      <p class="paragraph">&gt; &gt; &gt; Use a spotter</p>
+          <p class="paragraph">When you first start flying FPV, you need to remember that you can&rsquo;t see   anything around you or your quad. If you&rsquo;re at the park – you might not   see the small children entering the park from an entrance behind you   until it is too late. Bring a friend to help you while starting to fly so he can tell you if you are to close to something.</p>
+          <p class="paragraph">&gt; &gt; &gt;No reverse</p>
+          <p class="paragraph">You can&rsquo;t see anything behind yourself.Suck it up cupcake.</p>
+          <p class="paragraph">&gt; &gt; &gt;Start small</p>
+          <p class="paragraph"><span itemprop="articleBody text">If possible, fly with experienced friends so you can &ldquo;buddybox&rdquo; for interactive feedback.</span></p>
+          <p class="paragraph">Don't try to race and experience high speed on the first try. </p>
+          <p class="paragraph">Just try to keep you quadcopter under control and know where you are.</p>
+          <p class="paragraph">&gt; &gt; &gt; Things are fragile</p>
+          <p class="paragraph">Be carefull while taking off the battery of the drone don't stress to much the battery wires of you will break them.</p>
+          <p class="paragraph">Quadcopters breaks if you crash to much so learn to fix it!</p>
+          <p class="paragraph"><img src="beandrone/IMG_9604.JPG" alt=""></p>
           <p>&nbsp;</p>
+          <p class="numbersblue"><img src="beandrone/BeanCopterLogo.png" alt="" width="13" height="15"></p>
+          <p class="paragraph">&gt; &gt; &gt; &gt; &gt; &gt; &gt; &gt;<a class="bluefullsize" id="fly2"><strong>EXTRA-EXTRA &gt; &gt; &gt; KIT PARTS</strong></a></p>
+          <p class="paragraph">&nbsp;</p>
+          <p class="paragraph"><strong>If you have reached this point it means you have make your kit and you want to make another one or unluckly you crashed to much and need replacements.</strong></p>
+          <p class="paragraph"><strong>So here is the list of all the components and some internet links.</strong></p>
+          <p class="paragraph">&nbsp;</p>
+          
+          <p class="paragraph"><a href="http://www.banggood.com/2_4GHz-3dBi-RP-SMA-Connector-Booster-Wireless-Antenna-Modem-Router-p-979407.html">&gt; &gt; &gt; 2.4GHz 3dBi RP-SMA Connector Booster Wireless Antenna</a></p>
+          
+           <p class="paragraph"><a href="http://www.banggood.com/DIY-12V-8-x-AA-Battery-Holder-Case-Box-With-Leads-Switch-p-998860.html">&gt; &gt; &gt; 12V 8 x AA Battery Holder Case Box</a></p>
+          
+           <p class="paragraph"><a href="http://www.banggood.com/4_3inch-LCD-Car-Rearview-Monitor-Screen-Reverse-Camera-Kit-DVD-VCR-p-75120.html">&gt; &gt; &gt; 4.3inch LCD Monitor </a></p>
+          
+           <p class="paragraph"><a href="http://www.banggood.com/10cm-PCI-UFL-IPX-to-RPSMA-Female-Jack-Pigtail-Cable-p-924933.html">&gt; &gt; &gt;10cm PCI U.FL / IPX to RP-SMA Female Jack Pigtail Cable</a></p>
+          
+           <p class="paragraph"><a href="http://www.banggood.com/FPV-5_8G-200mW-Wireless-Audio-Video-Transmitter-Module-TX5823-p-84780.html">&gt; &gt; &gt;  5.8G 200mW Wireless Audio Video Transmitter Module TX5823</a></p>
+          
+           <p class="paragraph"><a href="http://www.banggood.com/FPV-5_8G-Wireless-Audio-Video-Receiving-Module-RX5808-p-84775.html">&gt; &gt; &gt; 5.8G Wireless Audio Video Receiving Module RX5808</a></p>
+          
+           <p class="paragraph"><a href="http://www.banggood.com/600TVL-8_0MP-14-2_8mm-CMOS-FPV-170-Degree-Wide-Anlge-Lens-Camera-PALNTSC-p-984345.html">&gt; &gt; &gt; 600TVL 1/4 1.8mm CMOS FPV 170 Degree Wide Angle Lens Camera</a></p>
+           
+           <p class="paragraph"><a href="http://www.banggood.com/4X-Blade-Set-KH8C-004-for-Eachine-H8-Mini-RC-Quadcopter-p-987067.html">&gt; &gt; &gt; 4X Blade Set</a></p>
+           
+           <p class="paragraph"><a href="http://www.banggood.com/4X-Motors-KH8C-005-for-Eachine-H8-Mini-RC-Quadcopter-p-987066.htmll">&gt; &gt; &gt; 4X Motors KH8C-005</a></p>
+           
+           <p class="paragraph"><a href="http://www.banggood.com/DIY-Transmitter-Antenna-Extension-Cable-Line-RF-Coaxial-RG178-10-Feet-p-984343.html">&gt; &gt; &gt;  RF Coaxial RG178 10 Feet</a></p>
+           
+           <p class="paragraph"><a href="http://www.banggood.com/Eachine-H8-Mini-RC-Quadcopter-Spare-Parts-3_7V-150mAh-Battery-H8mini-003-p-977953.html">&gt; &gt; &gt; 3.7V 150mAh Battery </a></p>
+                 <p class="paragraph"><a href="http://www.banggood.com/Eachine-H8-Mini-RC-Quadcopter-Spare-Parts-USB-Charging-Cable-p-988862.html">&gt; &gt; &gt; USB Charging Cable </a></p>
+                       <p class="paragraph"><a href="http://www.banggood.com/Eachine-H8-Mini-RC-Quadcopter-Spare-Parts-Receiver-Board-H8mini-004-p-977949.html">&gt; &gt; &gt; Receiver Board H8mini-004</a></p>
+                                <p class="paragraph"><a href="http://www.banggood.com/Eachine-H8-Mini-RC-Quadcopter-Spare-Parts-Transmitter-H8mini-001-p-977947.html">&gt; &gt; &gt;Transmitter H8mini-001</a></p>
+           
+          
           <p>&nbsp;</p>
           <p>&nbsp;</p>
           <p class="paragraph">&nbsp;</p>
