@@ -14,6 +14,48 @@ background-color: #FFFFFF;
 color: #424242;
 }
 
+
+.centerparagraph {
+	text-align: center;
+	font-variant: small-caps;
+	font-size: 20px;
+	
+	line-height: 20px;
+	height: 20px;
+	
+	margin-left: 5em;
+	margin-right: 5em;
+	margin-top: 1em;	
+}
+.centerblue {
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 900;
+	font-weight: bold;
+	font-size: 25px;
+	
+	line-height: 40px;
+	
+	margin-left: 5em;
+	margin-right: 5em;
+	margin-top: 1em;
+	background-color: #FFFFFF;
+	color: #1E90FF;
+	}
+.bigcenterblue {
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 900;
+	font-weight: bold;
+	font-size: 50px;
+	
+	margin-right: 1em;
+	
+	background-color: #1E90FF;
+	color: #FFFFFF;
+	}
+	
+	
 .paragraph {
 	margin-left: 5em;
 	margin-right: 5em;
