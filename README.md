@@ -4,6 +4,7 @@ Beans Reels Webpage	CC BY-NC-SA
 *Beans Reels is a one-man studio operated by Eduardo Chamorro
 
 This website works as online portfolio,showcase and workshops,tutorials platform of works develloped.
+http://eduardochamorro.github.io/beansreels/index.html
 
 
 (c)2016  Eduardo Chamorro "eduardochamorromartin@gmail.com"
