@@ -1,11 +1,8 @@
 # beansreels
 http://eduardochamorro.github.io/beansreels/index.html
 
-A living portfolio,showcase and work platform.
-
-
-*Beans Reels is a one-man studio operated by Eduardo Chamorro
-
+**Beans Reels is a one-man studio operated by Eduardo Chamorro**
+Living portfolio,showcase and work platform.
 
 (c)2016  Eduardo Chamorro "eduardochamorromartin@gmail.com"
 Beans Reels Webpage	CC BY-NC-SA
