@@ -60,15 +60,41 @@ as long as they credit you and license their new creations under the identical t
 			<section id="main" class="wrapper">
 				<div class="inner">
 					<header class="align-center">
-						<h1>Generic Page</h1>
-						<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+						<h1>Flight Controller</h1>
+						<p>The "brain" of everything</p>
 					</header>
-					<div class="image fit">
-						<img src="images/pic05.jpg" alt="" />
-					</div>
-					<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-					<p> Aenean iaculis, neque sed pretium egestas, nunc lacus tempus enim, nec tincidunt urna massa a libero. Aenean mattis bibendum est, a pharetra elit. Morbi commodo lectus quis blandit mattis. Cras pharetra quam quis tincidunt tempus. Donec a sem magna. Nullam purus purus, fermentum id lorem sit amet, porta elementum neque. Proin vulputate metus ac faucibus luctus.</p>
-					<p>Ut congue purus sed elit consectetur tempus. Duis convallis, quam quis pellentesque vestibulum, tellus arcu hendrerit ante, sed dictum felis nisl vitae magna. Integer et sapien a erat molestie tempor. Cras est odio, suscipit id porttitor id, mollis et ligula. Curabitur molestie mi molestie accumsan faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer porta malesuada pellentesque. Morbi imperdiet dictum velit, eu volutpat sem posuere non. Fusce ullamcorper gravida velit, sed sollicitudin libero iaculis id. Ut eu neque non odio fringilla faucibus nec quis neque. Quisque et nisi fermentum, tincidunt libero a, condimentum ligula. Quisque ultrices blandit lacinia. Nulla velit lorem, placerat nec eros ut, fermentum pharetra dolor. Maecenas arcu ipsum, mattis et suscipit sed, convallis nec lectus. Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; </p>
+						<P>
+							 A flight controller (a.k.a FC) is the brain of the aircraft. It is basically a circuit board that has built-in sensors that detects orientation changes. It also receives user commands, and controls the motors in order to keep the quadcopter in the air.
+						</P>
+						<P>
+							<B>Nearly all flight controllers have basic sensors such as Gyro (Gyroscopes) and Acc (Accelerometer). Some FC might include more advanced sensors such as Barometer (barometric pressure sensors) and magnetometer (compass).</B>
+						</P>
+						<p>
+							Flight controller is also a hub for many other peripherals, such as GPS, LED, Sonar sensor etc.
+						</p>
+
+
+						<h4>Naze 32</h4>
+						<p>
+							<div class="image fit"><img src="images/controller/1.jpg" alt="" /></div>
+						</p>
+						<p>The Naze32 is a small (36x36mm) flight controller based on 32-bit STM32 processor running at 72MHz. Comparing to other popular FC such as the KK2, APM2, and Crius AIO, which are all based on 8-bit platform running at 16Mhz.This board comes with two flavors, Acro Naze32 (FunFly) and Full Naze32.We are usin the ACRO version also called 6dof </p>
+						<p> Although the Naze32 uses ported version of Multiwii, it’s not exactly a Multiwii flight controller, because it uses different type of processor (STM based). Normally, multiwii FC for example the Arduino, or Crius AIO FC are Atmel based. </p>
+						<p>
+							<div class="image fit"><img src="images/controller/2.jpg" alt="" /></div>
+						</p>
+						<p>
+							This FC is getting more and more popular with mini size multicopter, due to it’s excellent performance and small size.
+						</p>
+						<P>
+							If you have already used Naze32 before, you probably have installed the driver. But if you are new, or you are using a new computer that never has connected a Naze32 before, you will have to install the Driver first. Otherwise your board is not recognised and it won’t be assigned a COM port.
+						</P>
+
+						<h4>Typical Naze32 Connection diagram</h4>
+						<div class="image fit"><img src="images/controller/3.jpg" alt="" /></div>
+						<p>The diagram below shows a fairly common setup on a FPV racing quadcopter using a CPPM receiver, optional GPS module, and an RGB LED bar. </p>
+
+
 				</div>
 			</section>
 
