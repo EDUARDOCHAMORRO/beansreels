@@ -40,6 +40,7 @@ as long as they credit you and license their new creations under the identical t
 		<!-- Menu -->
 			<nav id="menu">
 				<ul class="links">
+					<li><a href="../../index.html">BEANSREELS</a></li>
 					<li><a href="index.html">Home</a></li>
 					<li><a href="what.html">What is a drone</a></li>
 					<li><a href="types.html">Types</a></li>
@@ -60,39 +61,156 @@ as long as they credit you and license their new creations under the identical t
 			<section id="main" class="wrapper">
 				<div class="inner">
 					<header class="align-center">
-						<h1>Generic Page</h1>
-						<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+						<h1>Software - Configuration</h1>
+						<p>Introduction-How to setup the multicopter</p>
 					</header>
 					<div class="image fit">
-						<img src="images/pic05.jpg" alt="" />
+						<img src="images/configuration/0.jpg" alt="" />
 					</div>
-					<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-					<p> Aenean iaculis, neque sed pretium egestas, nunc lacus tempus enim, nec tincidunt urna massa a libero. Aenean mattis bibendum est, a pharetra elit. Morbi commodo lectus quis blandit mattis. Cras pharetra quam quis tincidunt tempus. Donec a sem magna. Nullam purus purus, fermentum id lorem sit amet, porta elementum neque. Proin vulputate metus ac faucibus luctus.</p>
-					<p>Ut congue purus sed elit consectetur tempus. Duis convallis, quam quis pellentesque vestibulum, tellus arcu hendrerit ante, sed dictum felis nisl vitae magna. Integer et sapien a erat molestie tempor. Cras est odio, suscipit id porttitor id, mollis et ligula. Curabitur molestie mi molestie accumsan faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer porta malesuada pellentesque. Morbi imperdiet dictum velit, eu volutpat sem posuere non. Fusce ullamcorper gravida velit, sed sollicitudin libero iaculis id. Ut eu neque non odio fringilla faucibus nec quis neque. Quisque et nisi fermentum, tincidunt libero a, condimentum ligula. Quisque ultrices blandit lacinia. Nulla velit lorem, placerat nec eros ut, fermentum pharetra dolor. Maecenas arcu ipsum, mattis et suscipit sed, convallis nec lectus. Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; </p>
+					<p>The majority of new builds will use one  flight controllers like and Naze32 or one of the newer STMF3 based flight control boards. Other flight controllers use improved sensors, have faster processors and more ports so you can add additional pieces easily like and OSD, LEDs, GPS, sonar, telemetry and others.  We’re using a NAZE REV 5-6 board in this build.</p>
+					<p>These boards typically run one of the families of ‘Flight control software/firmware. The two most common are Cleanflight and Betaflight. There are lots of others now too but you tend to find that boards come pre-installed with one or the other of these two versions, usually Cleanflight.
+					</p>
+					<H4><B>CLEANFLIGHT</B></H4>
+					<P>
+						An open source project that came out of Baseflight. Cleanflight is designed for racing and now has a heavy focus on improving the code to improve the resilience for pilots and facilitate safe, reliable updates for developers and users too. One of the latest features added has been new features around OSDs.
+					</P>
+						<H2>SAFETY FIRST!</H2>
+
+						<p>
+							In the following steps we will be doing a few things that can be dangerous. We will be plugging in the battery and we will be spinning up the motors. <B>Do not fit the propellers until you get to that stage just before you fly.</B>
+						</p>
+
+						<p>
+							There is a small chance that something will happen during the setup that will cause the model to power up then it can get very exciting and dangerous very quickly if the props are attached!
+						</p>
+
+						<H2>Step 1: Update the software on the flight controller</H2>
+						<div class="image fit">
+							<img src="images/configuration/1.jpg" alt="" />
+						</div>
+						<p>
+							We’ve already connected the flight controller to the computer and downloaded Cleanflight to see if the flight controller was ok before we attached or soldered anything. Many vendors will not replace a faulty flight controller once it’s been modified or soldered so this is a worthwhile step.
+						</p>
+						<P>
+							We will go through the same process again here to make sure that nothing we’ve done in the last few tutorials has upset the flight controller. When you connect to the flight controller you will see the version of the software running on it in the top right hand corner of the screen.
+						</P>
+						<p>
+							Personally I like to upgrade to the latest version, settings like PIDs usually change between versions and setups are often overwritten so it can feel like going through the steps below twice if you upgrade later.
+						</p>
+
+						<H2>Step 2: Calibrate the Accelerometers</H2>
+						<div class="image fit">
+							<img src="images/configuration/2.jpg" alt="" />
+						</div>
+						<p>
+							Once you are on the latest version then the first job is to calibrate the accelerometers. These are the sensors on the flight controller that sense the position of the model tilt. They are vital in all modes but especially those that provide auto-level features.
+
+						</p>
+						<P>
+							This step can be easily overlooked as the model in the GUI moves like the one on the screen but without an accurate calibration the model doesn’t know that ‘level’ should feel like making it more prone to drift and unexpected flight characteristics.
+						</P>
+						<p>
+							Pop the model on a flat surface and calibrate the accelerometers so that the model appears completely level on the screen.
+						</p>
+
+						<H2>Step 3: Setup the receiver type you have</H2>
+						<div class="image fit">
+							<img src="images/configuration/3.jpg" alt="" />
+						</div>
+						<p>
+							The next step is to setup the type of radio receiver you have. We looked at the common types last month but there is also support for the satellite receivers and protocols like iBus too. In the ‘Configuration’ tab, select the type of connection you have. NOTE: In Clenflight the GUI has been updated so if you can't find the settings for the receiver go to the bottom ofhte tab called 'Receiver'. Betaflight, iNavflight and others still have the setup for the radio in the position shown..
+						</p>
+						<P>
+							For PWM then simply select that option and click save and reboot in the bottom right hand corner
+							For PPM, select PPM and lick save and reboot in the bottom right hand corner
+						</P>
+
+						<H2>Step 4: Checking the radio works as it should</H2>
+						<div class="image fit">
+							<img src="images/configuration/4.jpg" alt="" />
+						</div>
+						<p>
+							In the ‘Radio’ tab, move the sticks on the radio and you should see the bars on the screen move. If the controls are moving the wrong bars then simply try each of the ‘Channel Map’ settings until they match. The channel values should increase as the sticks move up or to the right. If not then reverse that channel on the radio to fix it.
+						</p>
+						<P>
+						While you are moving the controls make sure that each channel moves from just above 1000 to just below 2000. If they go beyond this range then use the ‘endpoint adjustment’ in your radio to reduce the travel slightly. I try and get a travel range of 1020-1980 for the throttle, elevator (pitch), rudder (yaw) and aileron (roll).
+						</P>
+						<h4>Arming</h4>
+						<p>
+							Arming can be done with a switch or the movement of the throttle and rudder control. By default arming by the radio controls is selected. With the battery still connected, push the throttle to the lowest right position and you should see a little warning triangle light up at the top of the screen. The model is armed (this is why we don’t install the props!).
+
+						</p>
+						<P>
+							Now that is all complete then you need to test the failsafe on the radio receiver is setup. Not having a failsafe that will reduce the throttle to zero and return the controls to the neutral position can dramatically increase the chance of a ‘flyaway’ if there is a radio problem. Arm the board and increase the throttle slightly then turn the radio off – the throttle should return to zero.
+
+						</P>
+						<P>
+							It’s useful to rebind the radio and receiver after doing this so that the new channel settings and positions are stored in the radio receiver so it uses these updated values in the event of a failsafe.
+						</P>
+						<H2>Step 5: Setting up the flight modes</H2>
+						<div class="image fit">
+							<img src="images/configuration/5.jpg" alt="" />
+						</div>
+						<p>
+							In the section last month where we setup the radio we added an extra fifth channel to control the flight modes. Move that control on the radio and see which channel in the ‘Radio’ tab moves. It will normally be Aux1.
+						</p>
+						<P>
+						With that confirmed click on the flight modes tab, here we can setup what modes the position of that switch will activate. Select the control as Aux1 and then setup the modes as in the image, once set click ‘Save’. Move the switch and you should see the little bar move under the settings and the chosen mode highlight on the left.
+						</P>
+						<H4>Angle Mode:</H4>
+						<P>
+							The self-level mode, perfect for new pilots and test hovers! I use this as the mode to arm and take off in on all my models. Perfect for the coming test.
+						</P>
+						<H4>Horizon Mode:</H4>
+						<P>
+							 As a pilot, once you are conformable flying Angle mode then this allows you all of the safely of a self-level but also allows you to flip and roll by pushing the controls to the edges too.
+						</P>
+						<H4>Acro Mode:</H4>
+						<P>
+							 This is for experienced pilots. No auto level and the craft will flip roll and go upside down! Use this once you’re happy with Horizon mode.</P>
+
+							 <H2>Step 6: Calibrate ESCs</H2>
+	 						<div class="image fit">
+	 							<img src="images/configuration/6.jpg" alt="" />
+	 						</div>
+	 						<p>
+								The ESCs all now need to be calibrated. Calibration teaches each of the ESCs what the range of the throttle will be for flying. Enter the motors tab and, with the battery disconnected, and click on the warning tab. Raise the main throttle bat to the top position and plug in the battery, wait for the beeps from the ESCs then pull the main throttle control down to its lowest position and the ESCs will make a confirmation tone. Unplug the battery.
+
+	 						</p>
+	 						<P>
+	 						If you now plug in the battery, arm the model and raise the throttle the motors should all start at exactly the same time, if not repeat the process. Also check that each of the motors is turning in the right direction and if not swap any two of the three wires connecting the ESC to the motor to reverse it. Heat-shrink the motor/esc connections and then cable tie them securely so they can’t be caught in the props.
+	 						</P>
+							<H4>Note</H4>
+							<p>
+								If one or several motors turns in the reverse direction as they should,you can change the rotation direction by swaping two of the ESC-MOTORS wires.
+							</p>
+							<div class="image fit">
+	 							<img src="images/configuration/extra.jpg" alt="" />
+	 						</div>
+
+
 				</div>
 			</section>
+			<!-- Footer -->
+				<footer id="footer">
+					<div class="inner">
+						<h2>Get In Touch</h2>
+						<ul class="actions">
+							<li><span class="icon fa-envelope"></span> <a href="#">eduardochamorromartin@gmail.com</a></li>
 
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<h2>Get In Touch</h2>
-					<ul class="actions">
-						<li><span class="icon fa-phone"></span> <a href="#">(000) 000-0000</a></li>
-						<li><span class="icon fa-envelope"></span> <a href="#">information@untitled.tld</a></li>
-						<li><span class="icon fa-map-marker"></span> 123 Somewhere Road, Nashville, TN 00000</li>
-					</ul>
-				</div>
-				<div class="copyright">
-					&copy; Untitled. Design <a href="https://templated.co">TEMPLATED</a>. Images <a href="https://unsplash.com">Unsplash</a>.
-				</div>
-			</footer>
+						</ul>
+					</div>
+					<div class="copyright">
+						&copy; Eduardo Chamorro. Design <a href="https://templated.co">TEMPLATED</a>
+					</div>
+				</footer>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<!-- Scripts -->
+				<script src="assets/js/jquery.min.js"></script>
+				<script src="assets/js/jquery.scrolly.min.js"></script>
+				<script src="assets/js/skel.min.js"></script>
+				<script src="assets/js/util.js"></script>
+				<script src="assets/js/main.js"></script>
 
-	</body>
-</html>
+			</body>
+			</html>
