@@ -3648,7 +3648,7 @@
 		@media screen and (max-width: 1680px) {
 
 			#banner {
-				padding: 8em 0 6em 0;
+				padding: 8em 0 12em 0;
 			}
 
 		}
@@ -3656,7 +3656,7 @@
 		@media screen and (max-width: 1280px) {
 
 			#banner {
-				padding: 6em 0 4em 0;
+				padding: 6em 0 8em 0;
 			}
 
 				#banner h2 {
@@ -3668,7 +3668,7 @@
 		@media screen and (max-width: 980px) {
 
 			#banner {
-				padding: 4em 2em 2em 2em;
+				padding: 4em 2em 4em 2em;
 			}
 
 				#banner h2 {
@@ -3680,7 +3680,7 @@
 		@media screen and (max-width: 736px) {
 
 			#banner {
-				padding: 3em 1.5em 1em 1.5em;
+				padding: 3em 1.5em 2em 1.5em;
 			}
 
 				#banner h2 {
@@ -3696,7 +3696,7 @@
 		@media screen and (max-width: 480px) {
 
 			#banner {
-				padding: 3em 1em 1em 1em;
+				padding: 3em 1em 2em 1em;
 			}
 
 				#banner h2 {
