@@ -3515,6 +3515,7 @@
 		color: #ffffff;
 		padding: 8em 0 6em 0;
 		text-align: center;
+		min-height: 1000px;
 	}
 
 		#banner input, #banner select, #banner textarea {
