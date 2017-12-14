@@ -1,5 +1,5 @@
 /*
-	Typify by TEMPLATED
+	Spatial by TEMPLATED
 	templated.co @templatedco
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 */
@@ -38,6 +38,35 @@
 					skel.breakpoint('medium').active
 				);
 			});
+
+		// Off-Canvas Navigation.
+
+			// Navigation Panel Toggle.
+				$('<a href="#navPanel" class="navPanelToggle"></a>')
+					.appendTo($body);
+
+			// Navigation Panel.
+				$(
+					'<div id="navPanel">' +
+						$('#nav').html() +
+						'<a href="#navPanel" class="close"></a>' +
+					'</div>'
+				)
+					.appendTo($body)
+					.panel({
+						delay: 500,
+						hideOnClick: true,
+						hideOnSwipe: true,
+						resetScroll: true,
+						resetForms: true,
+						side: 'right'
+					});
+
+			// Fix: Remove transitions on WP<10 (poor/buggy performance).
+				if (skel.vars.os == 'wp' && skel.vars.osVersion < 10)
+					$('#navPanel')
+						.css('transition', 'none');
+
 
 	});
 
