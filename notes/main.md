@@ -10,7 +10,7 @@ personal data base and guide on daily life, don´t bother here we are working...
 #### Rhino - Grasshopper notes
   Precourse on rhino  [here](precourserhino.html)
 
-  Generative Design [here](Generative Design-examples.html)
+  Generative Design [here](Generative-Design-examples.html)
 
 #### Video editing
  [Precourse on after effects](precoursevideo.html)
