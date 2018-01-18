@@ -2,28 +2,26 @@
 
 personal data base and guide on daily life, don´t bother here we are working...Go back the the awesome [beans reels page](../index.html)
 
-##### Resources for presentation
+### Rhino - Grasshopper notes
+- Precourse on rhino  [here](precourserhino.html)
 
-- [IaaC logo W](IaacLogoBlack.png)
-- [IaaC logo W](IaacLogoWhite.png)
+- Generative Design [here](Generative-Design-examples.html)
 
-#### Rhino - Grasshopper notes
-  Precourse on rhino  [here](precourserhino.html)
+### Video editing
+- [Precourse on after effects](precoursevideo.html)
 
-  Generative Design [here](Generative-Design-examples.html)
+### Methodology - how to Research
 
-#### Video editing
- [Precourse on after effects](precoursevideo.html)
-
-#### Methodology - how to Research
-
-- Sinthesis 1 [here](methodology-documents/PRECOURSE SYNTHESIS 1.pdf)
-- Sinthesis 2 [here](methodology-documents/PRECOURSE SYNTHESIS 2.pdf)
-- Sinthesis 3 [here](methodology-documents/PRECOURSE SYNTHESIS 3.pdf)
+- Sinthesis 1 [here](methodology-documents/PRECOURSESYNTHESIS1.pdf)
+- Sinthesis 2 [here](methodology-documents/PRECOURSESYNTHESIS2.pdf)
+- Sinthesis 3 [here](methodology-documents/PRECOURSESYNTHESIS3.pdf)
 
 First research document [here](methodology-documents/EduardoChamorro-Methodology.pdf)
 
-
-
 **How to write research papers** [go](HowToWriteResearchPapers.html)
->work file[ download](HowToWriteResearchPapers.md)
+- work file[ download](HowToWriteResearchPapers.md)
+
+##### *Resources for presentation*
+
+- [IaaC logo W](IaacLogoBlack.png)
+- [IaaC logo W](IaacLogoWhite.png)
