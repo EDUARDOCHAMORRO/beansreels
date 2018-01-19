@@ -18,8 +18,13 @@ personal data base and guide on daily life, don´t bother here we are working...
 
 First research document [here](methodology-documents/EduardoChamorro-Methodology.pdf)
 
+Essay on blackMirror [here](EduardoChamorroBMEssay12012018.pdf)
+
+Research Paper on graphene and phase changing materials [here](EduardoChamorroResearchPaper01.pdf)
+
 **How to write research papers** [go](HowToWriteResearchPapers.html)
 - work file[ download](HowToWriteResearchPapers.md)
+
 
 ### Jobs - Research Positions - PhD
 
