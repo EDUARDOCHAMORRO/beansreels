@@ -21,6 +21,10 @@ First research document [here](methodology-documents/EduardoChamorro-Methodology
 **How to write research papers** [go](HowToWriteResearchPapers.html)
 - work file[ download](HowToWriteResearchPapers.md)
 
+### Jobs - Research Positions - PhD
+
+- [Recopilatory document](jobs.html)
+
 ##### *Resources for presentation*
 
 - [IaaC logo W](IaacLogoBlack.png)
