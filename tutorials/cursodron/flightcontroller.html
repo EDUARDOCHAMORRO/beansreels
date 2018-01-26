@@ -14,7 +14,7 @@
 	<!-- meta character set -->
 	<meta charset="UTF-8">
 	<!-- Site Title -->
-	<title>DroneWorkshop-Software</title>
+	<title>DroneWorkshop-FlightController</title>
 	<link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
 	<link rel="icon" href="img/icon.ico" type="image/x-icon">
 
@@ -58,8 +58,8 @@
 				<div class="row height align-items-center justify-content-center">
 					<div class="col-lg-10">
 						<div class="banner-content text-center">
-							<h2 class="text-white">Software</h2>
-							<p class="text-white">Configuracion y ajustes</p>
+							<h2 class="text-white">Flight Controller</h2>
+							<p class="text-white">El cerebro de los drones</p>
 						</div>
 
 					</div>
@@ -78,31 +78,60 @@
 					<br />	<br />Casi todos los controladores de vuelo tienen sensores básicos como Gyro (giroscopios) y Acc (acelerómetro). Algunos FC pueden incluir sensores más avanzados como el Barómetro (sensores de presión barométrica) y el magnetómetro (brújula).
 					<br /><br />El controlador de vuelo también es un centro para muchos otros periféricos, como GPS, LED, sensor de Sonar, etc.
 					La mayoría de las configuraciones nuevas usarán controladores de vuelo de arquitectura 32bits (anteriormente se utilizaban de 8 bits, basados principalmente en arduinos) o uno de los microprocesadores de control de vuelo  nuevos basados ​​en STMF1-F4. Los controladores de vuelo modernos usan sensores mejorados, tienen procesadores más rápidos y más puertos para que pueda agregar piezas adicionales fácilmente como OSD, LED, GPS, sonar, telemetría y otros.</p>
-				<a href="https://www.silabs.com/products/development-tools/software/direct-access-drivers" >Link Descarga de drivers<span class="lnr lnr-arrow-right"></span></a>
 
+					<h3 class="mb-30">Tipos</h3>
+				<p class="sample-text">
+					Existen muchos tipos de FC (controladores de vuelo) para quads con el firmware Betaflight,Cleanflight, KISS y Raceflight, según sus características, especificaciones y comentarios de los usuarios.
+					Tambien existen los pixhawk, naza, openpilot,etc Cada tipo utiliza un firmware y hardware diferente, algunos tienen funcionalidades que otros no posees como la posibilidad de expansiones autonomas o centradas en larga distancia o por el contrario en carreras de drones,donde se premia la velocidad de procesado.
+				Antes de elegir una placa FC, debe tomar una decisión sobre qué firmware de FC desea utilizar, ya que la mayoría de los controladores de vuelo están limitados a un firmware.</p>
+					<div class="col-md-12">
+					<a href="img/controller/pic07.jpg" class="img-pop-up"><div class="single-gallery-image" style="background: url(img/controller/pic07.jpg);"></div></a>
+				</div><br />
+				<p class="sample-text">
+					Para los principiantes, yo personalmente recomiendo Betaflight,cleanflight,InaV,Baseflight porque son los firmwares más utilizados y con mas documentacion,ademas funcionan muy bien out of the box y sin apenas calibracion.
+				Ademas las placas para este tipo al ser modulares y multiconfigurables permiten expandir las opciones de acuerdo a las necesidades y gustos de cada piloto. Convirtiendolas en muy buenas opciones tanto economicas como de expansion.</p>
 
 
 				<div class="section-top-border">
-					<h3 class="mb-30">Left Aligned</h3>
+					<h3 class="mb-30">Naze 32</h3>
 					<div class="row">
 						<div class="col-md-3">
-							<img src="img/d.jpg" alt="" class="img-fluid">
+							<img src="img/controller/1.jpg" alt="" class="img-fluid">
 						</div>
 						<div class="col-md-9 mt-sm-20">
-							<p>Recently, the US Federal government banned online casinos from operating in America by making it illegal to transfer money to them through any US bank or payment system. As a result of this law, most of the popular online casino networks such as Party Gaming and PlayTech left the United States. Overnight, online casino players found themselves being chased by the Federal government. But, after a fortnight, the online casino industry came up with a solution and new online casinos started taking root. These began to operate under a different business umbrella, and by doing that, rendered the transfer of money to and from them legal. A major part of this was enlisting electronic banking systems that would accept this new clarification and start doing business with me. Listed in this article are the electronic banking systems that accept players from the United States that wish to play in online casinos.</p>
+							<p>El Naze32 es un controlador de vuelo pequeño (36x36 mm) basado en un procesador STM32 de 32 bits que funciona a 72MHz. Comparando con otros populares FC como KK2, APM2 y Crius AIO, todos basados ​​en plataformas de 8 bits que funcionan a 16Mhz.Las placa de control normalmente vienen con dos configuraciones, Acro Naze32 (FunFly) y Full Naze32.La ACRO versión es también llamada 6dof y la full version es la 10dof
+								<br /><br /> La diferencia entre ambas version es la cantidad de sensores que posee cada uno. Lo basico en cualquier controlador es 6 dof (dof significa grados de libertad en ingles) es decir tiene un gyroscopio(3dof) y un acelerometro(3dof), son los sensores basicos para poder volar(aunque solo es necesario un gyroscopio, el acelerometro y gyroscopio normalmente vienen en un mismo chip). Las versiones con 10 dof integran ademas un magnetómetro(3dof) y un barometro.
+								Estos ultimos ayudan a tener mayor control del dron y poder actuar mas autonomamente.
+							 </p>
 						</div>
 					</div>
 				</div>
+
+				<p class="sample-text">
+					El siguiente diagrama muestra una configuración bastante común en un quadcopter de carrera FPV que utiliza un receptor CPPM, un módulo GPS opcional y una barra LED RGB.
+				</p>
+					<div class="col-md-12">
+					<a href="img/controller/3.jpg" class="img-pop-up"><div class="single-gallery-image" style="background: url(img/controller/3.jpg);"></div></a>
+				</div><br />
+				<p class="sample-text">
+					Aunque el Naze32 usa la versión portada de Multiwii, no es exactamente un controlador de vuelo Multiwii, ya que utiliza diferentes tipos de procesador (basado en STM). Normalmente, Multiwii FC, por ejemplo Arduino, o Crius AIO FC están basados ​​en Atmel.
+				Este FC se está volviendo cada vez más popular con el mini-multicopter de tamaño pequeño, debido a su excelente rendimiento y pequeño tamaño.</p>
+				<a href="img/controller/large.jpg" class="img-pop-up"><div class="single-gallery-image" style="background: url(img/controller/large.jpg);"></div></a>
+				
+
 				<div class="section-top-border text-right">
-					<h3 class="mb-30">Right Aligned</h3>
+					<h3 class="mb-30">Drivers</h3>
 					<div class="row">
 						<div class="col-md-9">
-							<p class="text-right">Over time, even the most sophisticated, memory packed computer can begin to run slow if we don’t do something to prevent it. The reason why has less to do with how computers are made and how they age and more to do with the way we use them. You see, all of the daily tasks that we do on our PC from running programs to downloading and deleting software can make our computer sluggish. To keep this from happening, you need to understand the reasons why your PC is getting slower and do something to keep your PC running at its best. You can do this through regular maintenance and PC performance optimization programs</p>
-							<p class="text-right">Before we discuss all of the things that could be affecting your PC’s performance, let’s talk a little about what symptoms</p>
+							<p class="text-right">Si ya ha usado Naze32 anteriormente, probablemente haya instalado el controlador. Pero si eres nuevo o estás usando una computadora nueva que nunca antes había conectado un Naze32, primero tendrás que instalar el controlador. De lo contrario, su placa no se reconocerá y no se le asignará un puerto COM.</p>
 						</div>
+
 						<div class="col-md-3">
-							<img src="img/d.jpg" alt="" class="img-fluid">
+							<img src="img/controller/5.jpg" alt="" class="img-fluid">
 						</div>
+						<a href="https://www.silabs.com/products/development-tools/software/direct-access-drivers" >Link Descarga de drivers<span class="lnr lnr-arrow-right"></span></a>
+
+						<br/></br/>
 
 
 
