@@ -4,7 +4,7 @@ personal data base and guide on daily life, don´t bother here we are working...
 
 ### Rhino - Grasshopper notes
 - Precourse on rhino  [here](precourserhino.html)
-
+- Location grass pluginss   C:\Users\Eduardo Chamorro\AppData\Roaming\Grasshopper\Libraries
 - Generative Design [here](Generative-Design-examples.html)
 
 ### Video editing
