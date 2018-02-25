@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome file</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="precourse---rhino">Precourse - Rhino</h1>
+<p><a href="https://drive.google.com/drive/u/2/folders/0B9mK0dOv8IABT05zUlF6cWg5OWc">Class Google Drive Examples</a></p>
+<p><strong>Nurbs</strong>
+Geometrical spline that defines surfaces
+Advantages</p>
+<ul>
+<li>when you want to edit it is really easy to change shapes</li>
+</ul>
+<h3 id="commands-rhino-working-file-1">Commands <a href="rhino/1.3dm">Rhino Working file 1</a></h3>
+<ul>
+<li>Right for rotating</li>
+<li>Left for selecting</li>
+<li>Shift+ Right pan</li>
+<li>Cntrl+ Right zoom</li>
+<li>Alt + Right   Zoom</li>
+<li>Shift+alt+right  Tilt</li>
+</ul>
+<p>If you make want a make a line in vertical</p>
+<ul>
+<li>Command line / press control while click again in the initial point/ now your line is in the Z axis</li>
+</ul>
+<p><strong>3d curve</strong> by pressing control and clik for control point</p>
+<ul>
+<li>
+<p><strong>CONTROL+SHIFT+LEF  Select FACE</strong></p>
+</li>
+<li>
+<p><strong>Change the line of dots/dash lines</strong>
+_ setlinetypescale</p>
+</li>
+</ul>
+<p>and change the values until you see it nicely</p>
+<p><code>SEAPLANE = working table</code></p>
+<p><img src="rhino/1.jpg" alt=""></p>
+<p>Double click on the viewport type(perspective,top,etc)To full screen it.<em>double click again to return to 4 views</em></p>
+<p>Tools/options <strong>all configuration of Rhino</strong></p>
+<p>Lens recommendation ( right panel)</p>
+<ul>
+<li>50mm</li>
+<li>35mm</li>
+</ul>
+<p><img src="rhino/2.jpg" alt=""></p>
+<h4 id="filter">Filter</h4>
+<p>To allow you select only what it is active</p>
+<h4 id="gumball">Gumball</h4>
+<p>Scale/Rotate/Move
+<em>Double click on it to allow you to introduce units</em></p>
+<ul>
+<li>+Shift it will do it proportional</li>
+</ul>
+<p>Click on the white cirle with left click to relocate gumball and put the new axis.</p>
+<p><img src="rhino/3.jpg" alt=""></p>
+<p><strong>Press Cntrl after moving to  create a surface from curves</strong></p>
+<p><img src="rhino/4.jpg" alt=""></p>
+<p><code>if you want to toggle the control points of a curve you can use CONTROL POINTS by activating F10-F11</code></p>
+<h4 id="rebuild">Rebuild</h4>
+<p>Will allow to add control points. When the context menu appear you got points and degree.
+Points= for number of control points
+Degree= for angled or curved, the same as curved.</p>
+<p>Will work for curves, surfaces, lines, etc</p>
+<p><em>_InsertControlPoint</em>  for new lines of control(increment the lines in some areas, you should turn off f10-f11)</p>
+<h4 id="solidpton">SolidPtOn</h4>
+<p>To edit the control point of a solid object without exploding
+If you use explode you can finish with an open objet.</p>
+<h4 id="cagedit">Cagedit</h4>
+<p>Boundy box for make a point of cage to deform solid objects</p>
+<h4 id="surface-tools-rhino-working-file-2">Surface Tools <a href="rhino/2.3dm">Rhino Working file 2</a></h4>
+<p>You can check the normal of the surfaces<br>
+<em>Command   _dir</em></p>
+<p>Making the surface clockwise is the opposite as counterclockwise, one will be backside up.</p>
+<p><img src="rhino/5.jpg" alt=""></p>
+<p><strong>Closed Surfaces</strong></p>
+<p>The only closed surfaces(naturally) are the sphere and the torus as the controlpoints/corners are supperposed above themselves.</p>
+<p><strong>Trimed Surfaces</strong></p>
+<p>If you trim a surface the control points of the biggest surface keep steading there.</p>
+<p>If you want to shrink the point to adapt to your new surface you should apply the <em>_SHRINK</em> COMMAND  (righ image)</p>
+<p><img src="rhino/6.jpg" alt=""></p>
+<p><strong>3-4 Points Surfaces</strong></p>
+<p>It is not the same a:</p>
+<ul>
+<li>surface made with 4 control points (left)</li>
+<li>surface made with 4 control point (center) the initial is the same as the final</li>
+<li>surface with 3 control points ( right) the 4 point it is a ghost.</li>
+</ul>
+<p><img src="rhino/7.jpg" alt=""></p>
+<p><strong>Surface that is turned back you can “flip” it COMMAND</strong></p>
+<h4 id="duplicate-borders">Duplicate borders</h4>
+<p>To extract the permiter from a surface
+<em>_DupBorder</em></p>
+<p><strong>Surface from curves</strong></p>
+<p>You create for example 3 close curves
+Intersect them with some planes and select everything for <em>_intersect</em>
+<img src="rhino/8.jpg" alt="">
+Erase the planes and you can see the points in the intersection</p>
+<p>Now you can join the point with some curves</p>
+<p>Curve - Interpolate points(inside curve)</p>
+<p>And create the surface with surface/ create surface from network of curves.</p>
+<p><img src="rhino/9.jpg" alt=""></p>
+<p><strong>Surface from borders,etc</strong></p>
+<p><em>Patch command</em></p>
+<p><em>Stiffness</em></p>
+<ul>
+<li>lower numbers make it more loose</li>
+<li>if it is to stiff it could not adapt to the corners,lines,curves,etc</li>
+</ul>
+<p><em>Automatic Trim</em> will show you the whole original trimed surface in case you have it</p>
+<p><img src="rhino/10.jpg" alt=""></p>
+<p><em>Adjust tangency</em>
+when you want to fill the hole or trimed part with a surface that it is in another surface</p>
+<p><img src="rhino/11.jpg" alt=""></p>
+<p><strong>Sweep</strong></p>
+<p>Drag seam point means where to start
+<img src="rhino/12.jpg" alt=""></p>
+<p>You need a main guiding line and a profile to follow that lines
+You can move the CPLANE to the curve to create a profile perpendicular to the guiding line.</p>
+<p><img src="rhino/13.jpg" alt=""></p>
+<p><strong>Sweep2</strong></p>
+<ul>
+<li>Make two rails</li>
+<li>Make line profiles or curves, if you use lines rebuild them and modify them.</li>
+<li>do Sweep2</li>
+</ul>
+<p><strong>Revolve</strong></p>
+<p><img src="rhino/14.jpg" alt=""></p>
+<p><strong>Zebra analysis</strong></p>
+<p><em>Zebra Command</em>    it is just an analysis tools for helping with the viewing</p>
+<p><img src="rhino/15.jpg" alt=""></p>
+<p><strong>Divide command</strong></p>
+<p><em>divide</em> to help you ´cut´a circle for example to stablish some dots on it in equally distance.</p>
+<h3 id="height-field-map--rhino-working-file-3">Height field map  <a href="rhino/3.3dm">Rhino Working file 3</a></h3>
+<p><em>PICTURE FRAME</em>  allows you to introduce a picture in rhino</p>
+<p><img src="rhino/16.jpg" alt="">
+<img src="rhino/17.jpg" alt="">
+<em>Heightfield</em>  allows you to make the height field</p>
+<p>Contour–plane
+Giving diferent values or directions on the axis and the space between the ´cuts´you can make the sections or profiles.</p>
+<p><img src="rhino/18.jpg" alt=""></p>
+<h3 id="drape">Drape</h3>
+<p>Make some shapes/ set you up in top view / Drape / make the window</p>
+<h3 id="boolean-operations-rhino-working-file-4">BOOLEAN OPERATIONS <a href="rhino/4.3dm">Rhino Working file 4</a></h3>
+<p><strong>Cap</strong>
+For closing open surfaces / open lofts</p>
+<h3 id="solid-transforms-rhino-working-file-5">SOLID TRANSFORMS <a href="rhino/5.3dm">Rhino Working file 5</a></h3>
+<h3 id="twist-towers-example-rhino-real-example">Twist Towers example <a href="rhino/towers.3dm">Rhino real example</a></h3>
+<h3 id="mesh--rhino-working-file-6">MESH  <a href="rhino/6.3dm">Rhino Working file 6</a></h3>
+<p>Meshes have also control points but <strong>cannot be Rebuild</strong></p>
+<p>We can transform a polysurface into a mesh with ´Mesh´ command, adjusting the polygon density.</p>
+<p>You can join a mesh even if the meshes are not touching.</p>
+<h3 id="flatten-files-for-machines">Flatten files for machines</h3>
+<p>PROJECT TO C PLANE  command</p>
+<h3 id="erase-duplicates-lines">Erase duplicates lines</h3>
+<p>SELDUP</p>
+<h3 id="measure-total-lenght-of-lines">Measure total lenght of lines</h3>
+<p>lenght command</p>
+<h3 id="to-check-is-the-mes-is-okey-for-3d-printing">To check is the mes is okey for 3d printing</h3>
+<p>MESREPAIR command</p>
+</div>
+</body>
+
+</html>

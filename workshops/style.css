@@ -1,0 +1,148 @@
+body {
+font-family: "Ubuntu Mono";
+background-color: #FFFFFF;
+}
+
+.mainframe {
+width: 100%;
+max-width: 60m;
+padding: 1em;
+margin: 3em auto;
+margin-bottom: 2em;
+overflow: visible;
+background-color: #FFFFFF;
+color: #424242;
+}
+
+
+.centerparagraph {
+	text-align: center;
+	font-variant: small-caps;
+	font-size: 18px;
+	
+	line-height: 20px;
+	height: 1px;
+	
+	margin-left: 5em;
+	margin-right: 5em;
+	margin-top: 1em;	
+}
+.centerblue {
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 900;
+	font-weight: bold;
+	font-size: 25px;
+	
+	line-height: 40px;
+	
+	margin-left: 5em;
+	margin-right: 5em;
+	margin-top: 1em;
+	background-color: #FFFFFF;
+	color: #1E90FF;
+	}
+.bigcenterblue {
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 900;
+	font-weight: bold;
+	font-size: 50px;
+	
+	margin-right: 1em;
+	
+	background-color: #1E90FF;
+	color: #FFFFFF;
+	}
+	
+	
+.paragraph {
+	margin-left: 5em;
+	margin-right: 5em;
+	margin-top: 1em;
+}
+.bluefullsize {
+	margin-left: 5em;
+	margin-right: 5em;
+	margin-top: 1em;
+	background-color: #FFFFFF;
+	color: #1E90FF;
+}
+
+.numbers {
+	width: 3em;
+	clear: left;
+	float: left;
+	margin-top: 0;
+}
+.numbersblue {
+	width: 3em;
+	clear: left;
+	float: left;
+	margin-top: 0;
+	background-color: #FFFFFF;
+	color: #1E90FF;
+}
+.license {
+	color: #000000;
+	text-align: center;
+	padding-top: 1em;
+	font-size: 60%;
+	position: fixed;
+	bottom: 0;
+	clear: left;
+	float: left;
+	z-index: -1;
+	width:100%;
+
+}
+
+a {
+color: #424242;
+font-style: inherit;
+text-decoration: inherit;
+}
+
+b {
+color: #1E90FF;
+font-style: inherit;
+text-decoration: inherit;
+}
+
+em {
+color: #000000;
+font-style: inherit;
+text-decoration: line-through;
+font-weight: inherit;
+}
+
+blue{
+color: #1E90FF;
+font-style: inherit;
+font-weight: inherit;
+}
+
+img {
+max-width: 90%;
+height: auto;
+}
+
+h1, h2, h3 {
+color: #000000;
+text-align: left;
+}
+
+h1 {
+font-size: 170%;
+font-weight: 700;
+}
+
+h2 {
+font-size: 150%;
+font-weight: inherit;
+}
+
+h3 {
+font-size: 120%;
+font-weight: 700;
+}

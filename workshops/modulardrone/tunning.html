@@ -1,0 +1,154 @@
+<!-- /
+Beans Reels Design	CC BY-NC-SA
+(c)2016  Eduardo Chamorro Martin "eduardochamorromartin@gmail.com"
+
+This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
+This license lets others remix, tweak, and build upon your work non-commercially.
+Attribution-NonCommercial-ShareAlike
+You are free to:
+    Share — copy and redistribute the material in any medium or format
+    Adapt — remix, transform, and build upon the material
+    The licensor cannot revoke these freedoms as long as you follow the license terms.
+Under the following terms:
+    Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+    NonCommercial — You may not use the material for commercial purposes.
+    ShareAlike — If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
+No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
+as long as they credit you and license their new creations under the identical terms.
+
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>FabDrone</title>
+		<meta charset="utf-8" />
+		<meta name="author" content="EDUARDOCHAMORROMARTIN">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<nav class="left">
+					<a href="#menu"><span>Menu</span></a>
+				</nav>
+				<a href="index.html" class="logo">FabDrone</a>
+
+			</header>
+
+		<!-- Menu -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="../../index.html">BEANSREELS</a></li>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="what.html">What is a drone</a></li>
+					<li><a href="types.html">Types</a></li>
+					<li><a href="how.html">How it works</a></li>
+					<li><a href="remote.html">Remote Controller</a></li>
+					<li><a href="motors.html">Motors</a></li>
+					<li><a href="assembly.html">Frame assembly</a></li>
+					<li><a href="controller.html">Flight Controller</a></li>
+					<li><a href="configuration.html">Configuration</a></li>
+					<li><a href="prechecks.html">Preflight Checks</a></li>
+					<li><a href="tunning.html">Test-Tunning</a></li>
+					<li><a href="fly.html">Fly!</a></li>
+					<li><a href="parts.html">Parts List</a></li>
+					<li><a href="funnyquotes.html">Extra-Funny Quotes</a></li>
+				</ul>
+			</nav>
+		<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="inner">
+					<header class="align-center">
+						<h1>P.I.D TUNNING-CALIBRATION</h1>
+						<p>How to setup your multicopter</p>
+					</header>
+					<div class="image fit">
+						<img src="images/tunning/01.jpg" alt="" />
+					</div>
+
+
+					<h4>The Basics</h4>
+
+					<p>
+					If you’re a super nerd and you understand advanced math concepts, you can learn all about PID by finding a class about control theory. But for the rest of us, there’s no point even trying to fully understand PID because you’ll spend more time learning new math than actually learning how to tune a quadcopter. </p>
+
+					<h4>What Is PID for a Quadcopter?</h4>
+					<p>
+						PID is a function in flight controllers. It reads the data from sensors, and tells the motors how fast they need to spin. Ultimately this is how to stability is achieved on a quadcopter.
+
+						PID stands for proportional-integral-derivative. PID controller is a closed-loop control system that tries to get the actual result closer to the desired result by adjusting the input. The error is fed back to the beginning, and the same process repeats.
+					</p>
+						<h4>HERE YOU CAN SEE A VIDEO EXAMPLE OF DIFFERENT SETTINGS</h4>
+						<iframe width="853" height="480" src="https://www.youtube.com/embed/YNzqTGEl2xQ?rel=0" frameborder="0" allowfullscreen></iframe>
+					<h2>The Effect Of Each Parameter</h2>
+
+					<h4>P Gain</h4>
+					<P>
+						P is the main value you worry about, which determines the stability and handling. You can actually leave I and D values at 0 and your aircraft will still fly.
+					</P>
+					<P>
+						<b>The higher P gain, the harder it tries to stabilize the copter.</b> Generally speaking, high P gain means sharper control while low P gain means softer control. But if P is too high, the quadcopter becomes too sensitive and over-correct itself. Eventually it will cause overshoots, and you will have high frequency oscillations.
+					</P>
+
+
+					<h4>I Gain</h4>
+					<P>
+						This coefficient influences the precision of angular position. Higher I gain is especially beneficial in windy environment. With low I gain your quadcopter will simply drift away with the wind because it won’t hold the angle.
+					</P>
+					<P>
+						<b> When I value gets too high your quadcopter might start to feel stiff and doesn’t respond to your stick that well.</b> It’s similar to having a slower reaction and a decrease effect of the Proportional gain. In more extreme cases with excess I gain, the copter might even oscillate in a lower frequency.
+					</P>
+
+					<h4>D Gain</h4>
+					<P>
+						D gain works as a dampener and reduces the over-correcting and overshoots caused by P term. It makes your quad fly smoother and potentially can minimize propwash oscillations as well.
+					</P>
+					<P>
+						However excessive D value can introduce vibration in your quadcopter because it amplifies the noise in the system. In the attempt to make your quadcopter fly smoother it will tell the motors to spin faster or slower in a very fast rate that the motor cannot keep up, and eventually cause motor overheat.
+					</P>
+
+					<h4>How to tune quadcopter PID Gains</h4>
+					<ul><h4>Before Tunning</h4>
+						<li>Always tune your quad in Rate Mode (aka Acro Mode)</li>
+						<li>Make sure your quadcopter’s CG (centre of gravity) is right in the middle, CG has a significant effect on how good your quad can fly, and can be tuned</li>
+						<li>It is a matter of trial and error</li>
+					</ul>
+
+					<p>
+						There is no right or wrong way of tuning PID, whatever works for you is the right way.
+					</p>
+
+					<P>
+						Every time when you adjust PID, <b>you should ask yourself: “is it getting better or worse?”</b> Find the point where it has the best flight characteristics before it goes down hill again.
+					</P>
+					<h4>HERE YOU CAN SEE A VIDEO EXAMPLE OF DIFFERENT SETTINGS</h4>
+					<iframe width="853" height="480" src="https://www.youtube.com/embed/V_uRtskzvBI?rel=0" frameborder="0" allowfullscreen></iframe>
+
+
+				</div>
+			</section>
+			<!-- Footer -->
+				<footer id="footer">
+					<div class="inner">
+						<h2>Get In Touch</h2>
+						<ul class="actions">
+							<li><span class="icon fa-envelope"></span> <a href="#">eduardochamorromartin@gmail.com</a></li>
+
+						</ul>
+					</div>
+					<div class="copyright">
+						&copy; Eduardo Chamorro. Design <a href="https://templated.co">TEMPLATED</a>
+					</div>
+				</footer>
+
+			<!-- Scripts -->
+				<script src="assets/js/jquery.min.js"></script>
+				<script src="assets/js/jquery.scrolly.min.js"></script>
+				<script src="assets/js/skel.min.js"></script>
+				<script src="assets/js/util.js"></script>
+				<script src="assets/js/main.js"></script>
+
+			</body>
+			</html>
