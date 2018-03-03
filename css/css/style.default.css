@@ -712,7 +712,7 @@ MAIN PORTFOLIO SLIDER
 #main-slider .owl-controls .owl-buttons {
   display: none;
 }
-#main-slider .owl-controls .owl-page.active span, 
+#main-slider .owl-controls .owl-page.active span,
 #main-slider .owl-controls.clickable .owl-page:hover span {
   background: #0DA9FF;
 
@@ -812,7 +812,7 @@ a:active {
   background: #fff;
   margin-bottom: 30px;
   position: relative;
-  box-shadow: 0 0 5px #ccc;
+  box-shadow: 0 0 0px #ccc;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
@@ -876,7 +876,7 @@ a:active {
   font-size: 50px;
 }
 .box-masonry:hover {
-  box-shadow: 0 0 5px #999;
+  box-shadow: 0 0 1px #999;
 }
 .box-masonry:hover .box-masonry-hover-text-header {
   opacity: 1;
