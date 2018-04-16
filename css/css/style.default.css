@@ -398,7 +398,7 @@ SIDEBAR + RIGHT COLUMN
   min-height: 100vh;
 }
 .grid {
-  padding-top: 5px;
+  padding-top: 0px;
   overflow-y: hidden;
 }
 .content-column-content {
@@ -805,12 +805,14 @@ a:active {
   text-align: left;
 }
 .grid {
-  margin-right: -15px;
+  margin-right: -55px;
   margin-left: -15px;
 }
 .box-masonry {
   background: #fff;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+  margin-left: -10px;
+  margin-right: -10px;
   position: relative;
   box-shadow: 0 0 0px #ccc;
   -webkit-transition: all 0.2s ease-out;
@@ -838,6 +840,14 @@ a:active {
 .box-masonry .box-masonry-text {
   padding: 15px 20px 15px;
 }
+
+/*
+
+=====================
+change here to text in box
+=====================
+
+*/
 .box-masonry .box-masonry-text p {
   color: #999999;
   font-size: 14px;
@@ -1571,7 +1581,7 @@ body {
   font-size: 16px;
   line-height: 1.55;
   color: #000000;
-  background-color: #ffffff;
+  background-color: #F2F2F2;
 }
 a {
   color: #0DA9FF;
@@ -1937,6 +1947,7 @@ h6,
   line-height: 1.2;
   color: #000000;
 }
+
 h1,
 .h1 {
   font-size: 48px;
