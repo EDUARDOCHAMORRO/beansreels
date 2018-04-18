@@ -184,7 +184,7 @@ fieldset[disabled] .btn-ghost.active {
 .btn-ghost:active,
 .btn-ghost.active,
 .open .dropdown-toggle.btn-ghost {
-  color: #fff;
+  color: ;
   background-color: #0DA9FF;
   border-color: #0DA9FF;
 }
@@ -393,8 +393,14 @@ SIDEBAR + RIGHT COLUMN
 .content-column {
   padding-top: 40px;
 }
+
+
+=====================
+change color of background
+=====================
+
 .content-column.white-background {
-  background: #fff;
+  background: #F2F2F2;
   min-height: 100vh;
 }
 .grid {
