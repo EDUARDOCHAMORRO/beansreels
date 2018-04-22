@@ -184,7 +184,7 @@ fieldset[disabled] .btn-ghost.active {
 .btn-ghost:active,
 .btn-ghost.active,
 .open .dropdown-toggle.btn-ghost {
-  color: #fff;
+  color: ;
   background-color: #0DA9FF;
   border-color: #0DA9FF;
 }
@@ -393,12 +393,18 @@ SIDEBAR + RIGHT COLUMN
 .content-column {
   padding-top: 40px;
 }
+
+
+=====================
+change color of background
+=====================
+
 .content-column.white-background {
-  background: #fff;
+  background: #F2F2F2;
   min-height: 100vh;
 }
 .grid {
-  padding-top: 5px;
+  padding-top: 0px;
   overflow-y: hidden;
 }
 .content-column-content {
@@ -712,7 +718,7 @@ MAIN PORTFOLIO SLIDER
 #main-slider .owl-controls .owl-buttons {
   display: none;
 }
-#main-slider .owl-controls .owl-page.active span, 
+#main-slider .owl-controls .owl-page.active span,
 #main-slider .owl-controls.clickable .owl-page:hover span {
   background: #0DA9FF;
 
@@ -805,14 +811,16 @@ a:active {
   text-align: left;
 }
 .grid {
-  margin-right: -15px;
+  margin-right: -55px;
   margin-left: -15px;
 }
 .box-masonry {
   background: #fff;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+  margin-left: -10px;
+  margin-right: -10px;
   position: relative;
-  box-shadow: 0 0 5px #ccc;
+  box-shadow: 0 0 0px #ccc;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
@@ -838,6 +846,14 @@ a:active {
 .box-masonry .box-masonry-text {
   padding: 15px 20px 15px;
 }
+
+/*
+
+=====================
+change here to text in box
+=====================
+
+*/
 .box-masonry .box-masonry-text p {
   color: #999999;
   font-size: 14px;
@@ -876,7 +892,7 @@ a:active {
   font-size: 50px;
 }
 .box-masonry:hover {
-  box-shadow: 0 0 5px #999;
+  box-shadow: 0 0 1px #999;
 }
 .box-masonry:hover .box-masonry-hover-text-header {
   opacity: 1;
@@ -1571,7 +1587,7 @@ body {
   font-size: 16px;
   line-height: 1.55;
   color: #000000;
-  background-color: #ffffff;
+  background-color: #F2F2F2;
 }
 a {
   color: #0DA9FF;
@@ -1937,6 +1953,7 @@ h6,
   line-height: 1.2;
   color: #000000;
 }
+
 h1,
 .h1 {
   font-size: 48px;

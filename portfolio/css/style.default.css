@@ -204,7 +204,7 @@ fieldset[disabled] .btn-white.active {
 }
 .intro-left {
   height: 100%;
-  background: #fff;
+  background: #F2F2F2;
 }
 .intro-left-content {
   padding: 20px 10px;
@@ -667,7 +667,7 @@ body {
   font-size: 15px;
   line-height: 1.55;
   color: #000;
-  background-color: #fff;
+  background-color: #F2F2F2;
 }
 a {
   color: #0DA9FF;
