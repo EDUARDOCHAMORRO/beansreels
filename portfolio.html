@@ -41,6 +41,9 @@ You are free to:
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
   </head>
   <body>
+    <script>
+  document.body.className = 'fade';
+</script>
     <div id="all">
       <div class="container-fluid">
         <div class="row row-offcanvas row-offcanvas-left">
@@ -733,6 +736,11 @@ You are free to:
         </div>
       </div>
     </div>
+    <script>
+  document.addEventListener("DOMContentLoaded", function(e) {
+    document.body.className = '';
+  });
+</script>
     <!-- Javascript files-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/js/bootstrap.min.js"> </script>

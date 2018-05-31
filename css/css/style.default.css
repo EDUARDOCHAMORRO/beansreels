@@ -17,7 +17,15 @@ GENERAL
 html,
 body {
   overflow-x: hidden;
+  opacity: 1;
+  transition: 1.5s opacity;
+  background-color: #e0e0e0;
+
   /* Prevent scroll on narrow devices */
+}
+body.fade {
+    opacity: 0;
+    transition: none;
 }
 header {
   z-index: 1000;

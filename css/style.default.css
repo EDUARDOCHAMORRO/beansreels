@@ -16,9 +16,18 @@ GENERAL
 */
 html {
   height: 100%;
+
 }
 body {
   height: 100%;
+  opacity: 1;
+  transition: 1.5s opacity;
+  background-color: #e0e0e0;
+
+}
+body.fade {
+    opacity: 0;
+    transition: 9s opacity;
 }
 header {
   z-index: 1000;
