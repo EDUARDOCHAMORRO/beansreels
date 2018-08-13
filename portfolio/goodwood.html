@@ -84,13 +84,49 @@ You are free to:
                   <iframe src="https://player.vimeo.com/video/273892678?byline=0&portrait=0" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
                     <img alt="" src="goodwood/1.jpg" class="img-responsive"></br>
+                    <h4>Workflow:</h4>
+                    <p>The workflow consists of two inputs and a loop which is intended to optimize the design.</p>
+                    <h5>1.0 Inputs:</h5>
+                    <p>
+                      1.1 Scraps<br />
+                      In this project, we intend to fabricate a designed shape out of the scrap pieces of wood. This makes the wood pieces as one of the constants of the design process as they are in arbitrary random shapes and sizes. Furthermore, they are not meant to be processed to standard forms or be collected based on the design requirements. Therefore, the scrap pieces of wood are considered as one of the two inputs of the workflow.
+                    </p>
                     <img alt="" src="goodwood/2.jpg" class="img-responsive"></br>
+                    <p>
+                      1.2 Designed overall-shape:<br />
+                      The designed surface which is intended as the final shape is the second input of the loop.This surface is considered as the base input and is meant to be approximated during the process of optimization. The final shape is an approximation of this surface based on the number, sizes, and shapes of the scrap pieces. Optimizing the overall shape is not in the scope of this project. This surface is modeled as a high resolution mesh and is fed into the loop.</p>
                     <img alt="" src="goodwood/3.jpg" class="img-responsive"></br>
                       <iframe src="https://player.vimeo.com/video/273894943?byline=0&portrait=0" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                     <img alt="" src="goodwood/4.jpg" class="img-responsive"></br>
+                    <h5>2.0 Loop:</h5>
+                    <p>
+                      2.1 <br />The loop starts by discretizing the surface into planar panels using the Tangent-Plane
+Intersection(TPI) method. Initially, the shapes and sizes of the panels are generated randomly
+while the number of panels is based on the number of scrap pieces. Obviously, more panels
+will result in a more precise approximation of the surface. However, the precision is not the
+same all over the surface.
+                    </p>
                     <img alt="" src="goodwood/5.jpg" class="img-responsive"></br>
+                    <p>
+                      2.2<br /> Secondly, all of the panels are checked if they can be fitted inside the pieces of scrap woods.
+Only the critical parts of the panel are considered in this process consisting of: the joining
+area in the middle of each edge, and if the edge length is long enough to host the joinery.
+These points can be extended in case other criteria are planned to be considered such as??.
+This is also the first fitting criteria of the optimization. Lateral evaluations such as the covered
+percentage of the area or waste percentage of the scrap piece are also calculated and
+considered as other fitting criteria.
+                    </p>
                     <img alt="" src="goodwood/6.jpg" class="img-responsive"></br>
+                    <p>
+                      2.3<br /> The resulted shape is then created and evaluated for the structural performance or maximum
+deviation which are also considered as fitting criteria for the optimization.
+                    </p>
                     <img alt="" src="goodwood/7.jpg" class="img-responsive"></br>
+                    <p>
+                      2.4<br /> This process of discretizing, fitting, evaluating is then looped through a multi-criteria genetic
+algorithm considering all the fitting criteria, to find the panels which best fit the scrap pieces of
+wood.
+                    </p>
                     <img alt="" src="goodwood/8.jpg" class="img-responsive"></br>
                     <img alt="" src="goodwood/9.jpg" class="img-responsive"></br>
                   </br><a class="" href="../portfolio.html">Return to portfolio > </a></p>
