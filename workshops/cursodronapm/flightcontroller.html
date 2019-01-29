@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+<head>
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Favicon-->
+	<link rel="shortcut icon" href="img/fav.png">
+	<!-- Author Meta -->
+	<meta name="author" content="Eduardo Chamorro">
+	<!-- Meta Description -->
+	<meta name="description" content="curso drones eps ceu">
+	<!-- Meta Keyword -->
+	<meta name="keywords" content="dron, drones, workshop, curso, ceu, eps, eduardo , eduardo chamorro, chamorro,">
+	<!-- meta character set -->
+	<meta charset="UTF-8">
+	<!-- Site Title -->
+	<title>DroneWorkshop-FlightController</title>
+	<link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+	<link rel="icon" href="img/icon.ico" type="image/x-icon">
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,300,500" rel="stylesheet">
+		<!--
+		CSS
+		============================================= -->
+		<link rel="stylesheet" href="css/linearicons.css">
+		<link rel="stylesheet" href="css/owl.carousel.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/nice-select.css">
+		<link rel="stylesheet" href="css/magnific-popup.css">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body class="dup-body">
+		<div class="dup-body-wrap">
+	<!-- Start Header Area -->
+			<header class="default-header">
+				<div class="header-wrap">
+					<div class="header-top d-flex justify-content-between align-items-center">
+						<div class="logo">
+							<a href="index.html"><img src="img/logo2.png" alt=""></a>
+						</div>
+						<div class="main-menubar white-menubar d-flex align-items-center">
+							<nav class="hide">
+								<a href="../../index.html">Beans Reels</a>
+								<a href="index.html">Home</a>
+
+							</nav>
+							<div class="menu-bar"><span class="lnr lnr-menu"></span></div>
+						</div>
+					</div>
+				</div>
+			</header>
+		<!-- End Header Area -->
+
+		<!-- Start Banner Area -->
+		<section class="generic-banner element-banner relative">
+			<div class="container">
+				<div class="row height align-items-center justify-content-center">
+					<div class="col-lg-10">
+						<div class="banner-content text-center">
+							<h2 class="text-white">Flight Controller</h2>
+							<p class="text-white">El cerebro de los drones</p>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Banner Area -->
+
+
+		<!-- Start Achivement Area -->
+		<section class="sample-text-area">
+			<div class="container">
+				<h3 class="text-heading">Que son?</h3>
+				<p class="sample-text">
+					Un controlador de vuelo (también conocido como FC) es el cerebro de la aeronave. Básicamente es una placa de circuito que tiene sensores incorporados que detecta cambios de orientación. También recibe comandos de usuario y controla los motores para mantener el quadcopter en el aire.
+					<br />	<br />Casi todos los controladores de vuelo tienen sensores básicos como Gyro (giroscopios) y Acc (acelerómetro). Algunos FC pueden incluir sensores más avanzados como el Barómetro (sensores de presión barométrica) y el magnetómetro (brújula).
+					<br /><br />El controlador de vuelo también es un centro para muchos otros periféricos, como GPS, LED, sensor de Sonar, etc.
+					La mayoría de las configuraciones nuevas usarán controladores de vuelo de arquitectura 32bits (anteriormente se utilizaban de 8 bits, basados principalmente en arduinos) o uno de los microprocesadores de control de vuelo  nuevos basados ​​en STMF1-F4. Los controladores de vuelo modernos usan sensores mejorados, tienen procesadores más rápidos y más puertos para que pueda agregar piezas adicionales fácilmente como OSD, LED, GPS, sonar, telemetría y otros.</p>
+
+					<h3 class="mb-30">Tipos</h3>
+				<p class="sample-text">
+					Existen muchos tipos de FC (controladores de vuelo) para quads con el firmware Betaflight,Cleanflight, KISS y Raceflight, según sus características, especificaciones y comentarios de los usuarios.
+					Tambien existen los pixhawk, naza, openpilot,etc Cada tipo utiliza un firmware y hardware diferente, algunos tienen funcionalidades que otros no posees como la posibilidad de expansiones autonomas o centradas en larga distancia o por el contrario en carreras de drones,donde se premia la velocidad de procesado.
+				Antes de elegir una placa FC, debe tomar una decisión sobre qué firmware de FC desea utilizar, ya que la mayoría de los controladores de vuelo están limitados a un firmware.</p>
+					<div class="col-md-12">
+					<a href="img/controller/pic07.jpg" class="img-pop-up"><div class="single-gallery-image" style="background: url(img/controller/pic07.jpg);"></div></a>
+				</div><br />
+				<p class="sample-text">
+					Para los principiantes, yo personalmente recomiendo Betaflight,cleanflight,InaV,Baseflight porque son los firmwares más utilizados y con mas documentacion,ademas funcionan muy bien out of the box y sin apenas calibracion.
+				Ademas las placas para este tipo al ser modulares y multiconfigurables permiten expandir las opciones de acuerdo a las necesidades y gustos de cada piloto. Convirtiendolas en muy buenas opciones tanto economicas como de expansion.</p>
+
+
+				<div class="section-top-border">
+					<h3 class="mb-30">Naze 32</h3>
+					<div class="row">
+						<div class="col-md-3">
+							<img src="img/controller/1.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="col-md-9 mt-sm-20">
+							<p>El Naze32 es un controlador de vuelo pequeño (36x36 mm) basado en un procesador STM32 de 32 bits que funciona a 72MHz. Comparando con otros populares FC como KK2, APM2 y Crius AIO, todos basados ​​en plataformas de 8 bits que funcionan a 16Mhz.Las placa de control normalmente vienen con dos configuraciones, Acro Naze32 (FunFly) y Full Naze32.La ACRO versión es también llamada 6dof y la full version es la 10dof
+								<br /><br /> La diferencia entre ambas version es la cantidad de sensores que posee cada uno. Lo basico en cualquier controlador es 6 dof (dof significa grados de libertad en ingles) es decir tiene un gyroscopio(3dof) y un acelerometro(3dof), son los sensores basicos para poder volar(aunque solo es necesario un gyroscopio, el acelerometro y gyroscopio normalmente vienen en un mismo chip). Las versiones con 10 dof integran ademas un magnetómetro(3dof) y un barometro.
+								Estos ultimos ayudan a tener mayor control del dron y poder actuar mas autonomamente.
+							 </p>
+						</div>
+					</div>
+				</div>
+
+				<p class="sample-text">
+					El siguiente diagrama muestra una configuración bastante común en un quadcopter de carrera FPV que utiliza un receptor CPPM, un módulo GPS opcional y una barra LED RGB.
+				</p>
+					<div class="col-md-12">
+					<a href="img/controller/3.jpg" class="img-pop-up"><div class="single-gallery-image" style="background: url(img/controller/3.jpg);"></div></a>
+				</div><br />
+				<p class="sample-text">
+				El controllador de vuelo que vamos a utilizar es el RADIOLINK MINIPIX, no es exactamente un controlador de vuelo APM, ya que utiliza diferentes tipos de procesador (basado en STM). Normalmente, Multiwii FC, por ejemplo Arduino, o Crius AIO FC están basados ​​en Atmel.
+				Este FC se está volviendo cada vez más popular con el mini-multicopter de tamaño pequeño, debido a su excelente rendimiento y pequeño tamaño.</p>
+				<a href="img/controller/m1.jpg" class="img-pop-up"><div class="single-gallery-image" style="background: url(img/controller/m1.jpg);"></div></a>
+				<p class="sample-text">
+				Este tipo de controladora viene con ya todos los conectores preparados para ser plug and play. Este es el mapping de connectiones</p>
+				<a href="img/controller/m2.jpg" class="img-pop-up"><div class="single-gallery-image" style="background: url(img/controller/m2.jpg);"></div></a>
+				<p class="sample-text">
+				Al tratarse de una controladora modular viene con multiples accesorios como un boton de seguridad de inicio, un placa de expansion de sensores, cables de extension, GPS para localizarse y un avisador acustico.</p>
+				<a href="img/controller/m3.jpg" class="img-pop-up"><div class="single-gallery-image" style="background: url(img/controller/m3.jpg);"></div></a>
+
+
+				<div class="section-top-border text-right">
+					<h3 class="mb-30">Drivers</h3>
+					<div class="row">
+						<div class="col-md-9">
+							<p class="text-right">Si ya ha usado algun arduino o controladora de drones anteriormente, probablemente haya instalado el controlador. Pero si eres nuevo o estás usando una computadora nueva que nunca antes había conectado un Naze32, primero tendrás que instalar el controlador. De lo contrario, su placa no se reconocerá y no se le asignará un puerto COM.</p>
+						</div>
+
+						<div class="col-md-3">
+							<img src="img/controller/5.jpg" alt="" class="img-fluid">
+						</div>
+						<a href="https://www.silabs.com/products/development-tools/software/direct-access-drivers" >Link Descarga de drivers<span class="lnr lnr-arrow-right"></span></a>
+
+						<br/></br/>
+
+
+
+					</div>
+				</div>
+
+				<br/>
+				<a href="index.html" class="genric-btn primary circle">return to index</a>
+				<a href="motors.html" class="genric-btn primary circle">next page</a>
+
+
+			</div>
+		</section>
+
+
+
+		<!-- End Achivement Area -->
+				<!-- Start Video Area -->
+		<section class="video-area">
+			<div class="overlay overlay-bg"></div>
+			<div class="container">
+				<div class="video-content">
+					<a href="https://www.youtube.com/watch?v=i4UToCvdLeo" class="play-btn"><img src="img/play-btn.png" alt=""></a>
+					<h3 class="h2 text-white">Como configurar el flight controller</h3>
+				</div>
+			</div>
+		</section>
+		<!-- End Video Area -->
+
+<!-- Strat Footer Area -->
+		<footer class="section-gap footer-widget-area" id="footer">
+			<div class="overlay overlay-bg"></div>
+			<div class="container">
+
+
+				<div class="footer-bottom d-flex justify-content-between align-items-center flex-wrap">
+					<p class="footer-text m-0">Eduardo Chamorro -<a href="http://eduardochamorro.github.io/beansreels/index.html/"> Beans Reels</a> &copy; 2018 All rights reserved   |  Template by <a href="https://colorlib.com/">Colorlib</a></p>
+					<div class="footer-social d-flex align-items-center">
+						<a href="https://github.com/EDUARDOCHAMORRO"><i class="fa fa-github"></i></a>
+						<a href="https://www.linkedin.com/in/eduardo-chamorro-33574972/"><i class="fa fa-linkedin"></i></a>
+						<a href="https://www.instagram.com/beans_reels/"><i class="fa fa-instagram"></i></a>
+						<a href="http://beansreels.tumblr.com/"><i class="fa fa-tumblr"></i></a>
+
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- End Footer Area -->
+		</div>
+
+		<script src="js/vendor/jquery-2.2.4.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+		<script src="js/vendor/bootstrap.min.js"></script>
+		<script src="js/jquery.ajaxchimp.min.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/jquery.nice-select.min.js"></script>
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
