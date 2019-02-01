@@ -160,9 +160,19 @@
 						<div class="col-md-3">
 							<img src="img/configuration/open.png" alt="" class="img-fluid">
 						</div>
+					</div>
+				</div>
 
-
-
+								<div class="section-top-border text-right">
+					<h3 class="mb-30">Ardupilot</h3>
+					<div class="row">
+						<div class="col-md-9">
+							<p class="text-right">Uno de los primeros desarrollos de firmware FC de fuente abierta para multirrotores.Sigue siendo uno de los referentes en vuelo autonomo y en programacion ya que permite su conexion con otras plataformas como RasperriPi por conexion serial o MavLink.
+							</p>
+						</div>
+						<div class="col-md-3">
+							<img src="img/configuration/ardu.png" alt="" class="img-fluid">
+						</div>
 					</div>
 				</div>
 
@@ -176,79 +186,101 @@
 				<p class="sample-text">
 					Hay una pequeña posibilidad de que ocurra algo durante la configuración que hará que el modelo se encienda, ¡y puede ponerse muy peligroso si las helices están colocadas!</p>
 					<br /><br />
-					<h3 class="mb-30">Paso 1: Actualice el software en el controlador de vuelo</h3>
+					<h3 class="mb-30">Paso 1: Conexion con la controladora</h3>
 				<p class="sample-text">
-					Ya hemos conectado el controlador de vuelo a la computadora y descargamos Cleanflight para ver si el controlador de vuelo esta bien antes de conectar o soldar algo. Muchos proveedores instalan softwares anticuados , por lo que actualizarlos y tener las ultimas versiones de software es un paso que merece la pena.
-				 Personalmente, me gusta actualizar a la última versión, las configuraciones como los PID generalmente cambian entre versiones y los ultimos algoritmos y valores ayudan a tener un vuelo mas suave.</p>
-					<div class="col-md-12">
-					<a href="img/configuration/1.jpg" class="img-pop-up"><div class="single-gallery-image" style="background: url(img/configuration/1.jpg);"></div></a>
-				</div><br />
-				<br /><br />
-					<h3 class="mb-30">Paso 2: Calibra los sensores</h3>
-				<p class="sample-text">
-					Una vez tenemos la última versión,lo primero que tenemos que hacer es calibrar el acelerometro y giroscopio. Estos son los sensores en el controlador de vuelo que detectan la posición de la inclinación del modelo. Son vitales en todos los modos, pero especialmente en aquellos que proporcionan funciones de nivel automático.
-					<br />Esta configuracion se ve a medida que el modelo se mueve en la GUI de la pantalla,es facil de hacer pero sin una calibración precisa, el modelo no sabe que el "nivel" debería ser más propenso a la deriva y las características de vuelo inesperadas.Por lo que tenemos que realizarlo en una mesa plana y sin mover el modelo. hasta que aparezca completamente nivelado en la pantalla.
-				</p>
+				Para conectaros con la controladora debemos pulsar el boton superior derecho ( el enchufe) y seleccionar AUTO para que el propio programa encuentra la conexion con el dispositivo. Si no consigue encontrar la controladora seguramente es porque no tenemos instalados los drivers. En la pagina principal del workshop podeis encontrar los drives que debeis instalar para que vuestro ordenador pueda reconocer el dispositivo</p>
 					<div class="col-md-12">
 					<a href="img/configuration/2.jpg" class="img-pop-up"><div class="single-gallery-image" style="background: url(img/configuration/2.jpg);"></div></a>
 				</div><br />
 				<br /><br />
-					<h3 class="mb-30">Paso 3: configura el tipo de receptor que tienes</h3>
+					<h3 class="mb-30">Paso 2: Asistente de configuracion</h3>
 				<p class="sample-text">
-					El siguiente paso es configurar el tipo de receptor de radio que tenemos. Revisamos los tipos comunes en apartados anteriores pero existe también soporte para receptores mas modernos y compactos como satélite y protocolos como iBus. En la pestaña 'Configuración', selecciona el tipo de conexión que tienes. NOTA: En Cleanflight, la GUI se ha actualizado, de modo que si no puede encontrar la configuración para el receptor, vaya a la parte inferior de la pestaña "Receptor". Betaflight, iNavflight y otros aún tienen la configuración de la radio en la posición que se muestra en la imagen.
-					<br />Para PWM, simplemente seleccione esa opción y haga clic en guardar y reiniciar en la esquina inferior derecha. Para PPM, seleccione PPM y guardar y reiniciar en la esquina inferior derecha.
+				 Este software viene integrado con un asistente de configuracio de los parametros básicos que debemos seguir si es la primera vez que nos conectamos.Lo primero es definir el tipo de drone que tenemos y cuantos motores tiene.
 				</p>
 					<div class="col-md-12">
 					<a href="img/configuration/3.jpg" class="img-pop-up"><div class="single-gallery-image" style="background: url(img/configuration/3.jpg);"></div></a>
 				</div><br />
 				<br /><br />
-				<h3 class="mb-30">Paso 4: Verifica que la radio funcione como debería</h3>
+					<h3 class="mb-30">Paso 3: elige el tipo de chasis que tienes</h3>
 				<p class="sample-text">
-					En la pestaña 'Radio', mueve las palancas de la radio y deberías ver cómo se mueven las barras en la pantalla. Si los controles están moviendo las barras incorrectas, simplemente prueba cada una de las configuraciones de "Mapa de canales" hasta que coincidan. Los valores del canal deberían aumentar a medida que los palos se muevan hacia arriba o hacia la derecha. De lo contrario, invierta ese canal en la radio para arreglarlo.
-					<br /><br />
-					Mientras mueve los controles, asegúrese de que cada canal se mueva desde justo por encima de 1000 hasta justo por debajo de 2000. Si van más allá de este rango, utilice el "ajuste de punto final" en su radio para reducir el recorrido levemente. Intento obtener un rango de recorrido de 1020-1980 para el acelerador, el elevador, el timón  y el alerón
+					Aun que todos los drones de cuatro motores se llaman quadcopteros, las disposicion de los motores influye a la hora de volar y como se comportan. En este caso a pesar de que los brazos no forman una X perfecta este dron se considera un quadcoptero en x.
 				</p>
 					<div class="col-md-12">
 					<a href="img/configuration/4.jpg" class="img-pop-up"><div class="single-gallery-image" style="background: url(img/configuration/4.jpg);"></div></a>
 				</div><br />
-				<h5>Armado de seguridad</h5>
+				<br /><br />
+				<h3 class="mb-30">Paso 4: Calibracion del acelerometro</h3>
 				<p class="sample-text">
-					El armado se puede hacer con un interruptor o el movimiento del acelerador y el control del timón. Por defecto, se selecciona el armado por los controles de la radio. Con la batería todavía conectada, empuje el acelerador a la posición más baja derecha y verá un pequeño triángulo de advertencia iluminado en la parte superior de la pantalla. El modelo está armado (¡por eso no instalamos los accesorios!).
+					Una vez tenemos la última versión,lo primero que tenemos que hacer es calibrar el acelerometro y giroscopio. Estos son los sensores en el controlador de vuelo que detectan la posición de la inclinación del modelo. Son vitales en todos los modos, pero especialmente en aquellos que proporcionan funciones de nivel automático.
+					<br />Esta configuracion se ve a medida que el modelo se mueve en la GUI de la pantalla,es facil de hacer pero sin una calibración precisa, el modelo no sabe que el "nivel" debería ser más propenso a la deriva y las características de vuelo inesperadas.Por lo que tenemos que realizarlo en una mesa plana y sin mover el modelo. hasta que aparezca completamente nivelado en la pantalla.
+				</p>
+					<div class="col-md-12">
+					<a href="img/configuration/5.jpg" class="img-pop-up"><div class="single-gallery-image" style="background: url(img/configuration/5.jpg);"></div></a>
+				</div><br />
+				<h5>Calibracion del compas</h5>
+									<a href="img/configuration/6.jpg" class="img-pop-up"><div class="single-gallery-image" style="background: url(img/configuration/6.jpg);"></div></a>
+									<p class="sample-text">Siguiendo los pasos que nos muestra la pantall hacemos los mismo con la brujula es importante hacerlo alejado de componentes metalicos/moviles/ ordenadores o cualquier otra fuente de electromagnetismo.</p>
+
+
+
 					<br /><br />
-					Ahora que todo está completo, entonces necesitamos probar que el failsafe en el receptor de radio está configurado. No tener un sistema de seguridad que reduzca el acelerador a cero y devuelva los controles a la posición neutral puede aumentar drásticamente las posibilidades de una "fuga" si hay un problema de radio. Arme el tablero y aumente el acelerador ligeramente, luego apague la radio; el acelerador debería volver a cero.
-					</p>
-					<br /><br />
-				<h3 class="mb-30">Paso 5: configurar los modos de vuelo</h3>
+						<h3 class="mb-30">Paso 6: configurar el sensor de bateria</h3>
 				<p class="sample-text">
+				Este sensor detectara cuando el drone se esta quedando sin bateria y nos permitira monitorizarlo con el ordenador.Pudiendo configurar una vuelta a casa automatica en caso de falta de bateria.</p>
+					<div class="col-md-12">
+					<a href="img/configuration/7.jpg" class="img-pop-up"><div class="single-gallery-image" style="background: url(img/configuration/7.jpg);"></div></a>
+				</div><br />
+
+				<h3 class="mb-30">Paso 6: configurar y calibrar el mando por control remoto</h3>
+				<p class="sample-text">
+					El siguiente paso es configurar el tipo de receptor de radio que tenemos. Revisamos los tipos comunes en apartados anteriores pero existe también soporte para receptores mas modernos y
+					compactos como satélite y protocolos como iBus. En la pestaña 'Configuración', selecciona el tipo de conexión que tienes.
+            <br />
 					Vamos a agregar un quinto canal extra para controlar los modos de vuelo. Muevemos la palanca de control en la radio y veamos qué canal en la pestaña 'Radio' se mueve. Normalmente será Aux1.<br /><br />
 					Mientras mueve los controles, asegúrese de que cada canal se mueva desde justo por encima de 1000 hasta justo por debajo de 2000. Si van más allá de este rango, utilice el "ajuste de punto final" en su radio para reducir el recorrido levemente. Intento obtener un rango de recorrido de 1020-1980 para el acelerador, el elevador, el timón  y el alerón
 					<br /><br />Con ese clic confirmado en la pestaña de modos de vuelo, aquí podemos configurar qué modos se activará la posición de ese interruptor. Seleccione el control como Aux1 y luego configure los modos como en la imagen, una vez configurado, haga clic en 'Guardar'. Mueva el interruptor y debería ver la pequeña barra moverse debajo de los ajustes y el modo elegido resaltar a la izquierda.
 					</p>
 					<div class="col-md-12">
-					<a href="img/configuration/5.jpg" class="img-pop-up"><div class="single-gallery-image" style="background: url(img/configuration/5.jpg);"></div></a>
+					<a href="img/configuration/8.jpg" class="img-pop-up"><div class="single-gallery-image" style="background: url(img/configuration/8.jpg);"></div></a>
 				</div><br />
-				<h5>Modo de ángulo:</h5>
+				<h5>Modo de STAB:</h5>
 				<p class="sample-text">
 					El modo que autonivela, ¡perfecto para nuevos pilotos y para pruebas! Utilizar este como el modo para armar ya que el drone se autonivel perfectamente permitiendo un vuelo calmado. Perfecto para la próxima prueba.
 				</p>
-				<h5>Modo Acro:</h5>
+				<h5>Modo Loiter:</h5>
 				<p class="sample-text">
-					Esto es para pilotos experimentados. ¡No hay nivel automático y el dron rotará en cualquier direcion y se pondrá boca abajo!Prueba solo este modo si te encuentras muy comodo volando en horizonte.
+					Esto es para vuelos automatizados en el que el drone mantiene la posicion tanto por acelerometro, giroscopio y gps. Teniendo una localizacion de una precision de alrededor de 30cm.
 				</p>
-				<h5>Modo Horizonte:</h5>
+				<h5>Modo RTL</h5>
 				<p class="sample-text">
-					Como piloto, una vez que se encuentre comodo volando en modo Ángulo, este modo le permite le permite voltearse y empujar los limites hasta el borde, al estabilizar el dron en vuelo normal y permitir maniobras agresivas.
+					Este modo permite que el dron vuelva al punto de origen automaticamente y aterrize.
 				</p>
+				<a href="img/configuration/9.jpg" class="img-pop-up"><div class="single-gallery-image" style="background: url(img/configuration/9.jpg);"></div></a>
 				<br /><br />
-				<h3 class="mb-30">Paso 6: Calibrar ESC</h3>
-				<p class="sample-text">
-					odos los ESC necesitan ser calibrados. La calibración enseña a cada una de las ESCs cuál será el alcance del acelerador para volar. Ingrese a la pestaña de motores y, con la batería desconectada, y haga clic en la pestaña de advertencia. Levante el acelerador principal hacia la posición superior y conecte la batería, espere los pitidos de los ESC y luego presione el control principal del acelerador hasta su posición más baja y los ESC emitirán un tono de confirmación. Desenchufe la batería.</p>
+				<h3 class="mb-30">Paso 6: Comprobacion de calibrado</h3>
 					<div class="col-md-12">
-					<a href="img/configuration/6.jpg" class="img-pop-up"><div class="single-gallery-image" style="background: url(img/configuration/6.jpg);"></div></a>
+					<a href="img/configuration/10.jpg" class="img-pop-up"><div class="single-gallery-image" style="background: url(img/configuration/10.jpg);"></div></a>
+						<h3 class="mb-30">Paso 6: Configuracion apagado de emergencia</h3>
+					<a href="img/configuration/11.jpg" class="img-pop-up"><div class="single-gallery-image" style="background: url(img/configuration/11.jpg);"></div></a>
+						<h3 class="mb-30">Paso 6: Comprobacion limite virtual de distancia.</h3>
+					<a href="img/configuration/12.jpg" class="img-pop-up"><div class="single-gallery-image" style="background: url(img/configuration/12.jpg);"></div></a>
 				</div><br />
 				<p class="sample-text">
 					Si ahora enchufa la batería, arma el modelo y eleva el acelerador, todos los motores deberían comenzar exactamente al mismo tiempo, de lo contrario, repita el proceso. También verifique que cada uno de los motores esté girando en la dirección correcta y, si no, intercambie dos de los tres cables que conectan el ESC al motor para invertirlo.</p>
 					<h5>Nota</h5>
+
+
+
+
+
+
+
+
+
+
+
+
+
 					<p class="sample-text">
 						Si uno o varios motores giran en la dirección inversa como deberían, puede cambiar la dirección de rotación cambiando dos de los cables ESC-MOTORES.
 					</p>
